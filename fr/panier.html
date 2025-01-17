@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panier de Réservations</title>
+    <meta name="author" content="Mélisande Cornet" />
+    <meta name="description" content="Site vitrine de l'Hotel Chambord" />
+    <link rel="icon" type="image/x-icon" href="images/logo.webp" />
+    <!-- Google Font CDN pour les fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Libre+Caslon+Display&family=Roboto:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/29e60fcc8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/pages/panier.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <!-- LOGO START -->
+            <!-- H1 - nom hotel + 5 icones avec étoiles-->
+            <h1 class="logo">Hotel Chambord</h1>
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+            </div>
+          </a>
+          <!-- LOGO END -->
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <!-- Acceuil -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Acceuil</a
+                >
+              </li>
+              <!-- Chambre -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Chambre</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="chambre.html"
+                      >Voir toutes les gammes</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#classique"
+                      >Classique</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#confort"
+                      >Confort</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#deluxe"
+                      >Deluxe</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#suite">Suite</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Restaurant -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Restaurant</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="restaurant.html"
+                      >Découvrez notre restaurant</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-brasserie"
+                      >Carte Brasserie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-degustation"
+                      >Carte Dégustation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-restaurant"
+                      >Carte Restaurant</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Spa -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Le Spa</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="spa.html"
+                      >Le Spa et nos Soins</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-detente"
+                      >Soin Détente</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-decouverte"
+                      >Soin Découverte</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-relaxant"
+                      >Soin Relaxant</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-plaisir"
+                      >Soin Plaisir</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-evasion"
+                      >Soin Evasion</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Reservation -->
+              <li class="nav-item">
+                <a class="nav-link" href="reservation.html" target="_blank"
+                  >Réservation</a
+                >
+              </li>
+              <!-- Avis -->
+              <li class="nav-item">
+                <a class="nav-link" href="avis.html">Avis</a>
+              </li>
+              <!-- Hotel -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >L'hôtel</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="hotel.html" target="_blank"
+                      >Qui sommes-nous?</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#acces">Accès</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#contact"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#carriere"
+                      >Recrutement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#evenement"
+                      >Evénement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#presse">Presse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="actualités.html">Actualités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hotel.html#contact">Contact</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex me-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Rechercher"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-sucess"
+                type="submit"
+                title="Rechercher"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div>
+              <a
+                href="panier.html#modal-content"
+                class="btn btn-outline-sucess"
+              >
+                <i class="fa fa-shopping-cart"></i>Panier
+              </a>
+            </div>
+            <div class="language-selector ms-2">
+              <a href="#" class="btn btn-link p-0 me-2" id="fr-lang">
+                <img src="images/france.webp" alt="Français" />
+              </a>
+              <a href="#" class="btn btn-link p-0" id="en-lang">
+                <img src="images/united-kingdom.webp" alt="English" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- fin header -->
+
+    <div class="cart-container">
+      <h1 class="cart-title">Votre Panier</h1>
+
+      <div id="cartContent">
+        <!--! C'est ici que le contenu du panier sera injecté par JavaScript -->
+      </div>
+      <!-- si le panier n'est pas vide - l'internaute sera diriger vers ce formlaire de payment -->
+      <div class="checkout-form" id="checkoutForm">
+        <h2 class="mb-4">Informations de contact</h2>
+        <form id="paymentForm">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="firstName">Prénom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="lastName">Nom</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" class="form-control" id="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label>Méthode de paiement</label>
+            <div class="payment-methods">
+              <div class="payment-method" onclick="selectPaymentMethod('card')">
+                <i class="fas fa-credit-card"></i>
+                <p>Carte bancaire</p>
+              </div>
+              <div
+                class="payment-method"
+                onclick="selectPaymentMethod('paypal')"
+              >
+                <i class="fab fa-paypal"></i>
+                <p>PayPal</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="cardDetails">
+            <div class="form-group">
+              <label for="cardNumber">Numéro de carte</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cardNumber"
+                placeholder="1234 5678 9012 3456"
+              />
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="expiryDate">Date d'expiration</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="expiryDate"
+                    placeholder="MM/AA"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="cvv">CVV</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cvv"
+                    placeholder="123"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            Confirmer la réservation
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- footer Begins -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Hotel Chambord</h5>
+            <p>1 Avenue Montaigne<br />75008 Paris, France</p>
+            <p>
+              Tél : +33 (0)1 23 45 67 89<br />Email : contact@hotelchambord.com
+            </p>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Liens rapides</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white">Accueil</a>
+              </li>
+              <li>
+                <a href="chambre.html" class="text-white">Chambres & Suites</a>
+              </li>
+              <li>
+                <a href="restaurant.html" class="text-white">Restaurant</a>
+              </li>
+              <li>
+                <a href="spa.html" class="text-white">Spa & Bien-être</a>
+              </li>
+              <li>
+                <a href="reservation.html" class="text-white">Réservations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Informations</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="hotel.html#qui-sommes-nous" class="text-white"
+                  >Qui sommes-nous ?</a
+                >
+              </li>
+              <li>
+                <a href="hotel.html#carriere" class="text-white">Carrières</a>
+              </li>
+              <li>
+                <a href="hotel.html#presse" class="text-white">Presse</a>
+              </li>
+              <li><a href="#" class="text-white">Conditions générales</a></li>
+              <li>
+                <a href="#" class="text-white">Politique de confidentialité</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-uppercase mb-4 footer-h5">Suivez-nous</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Votre email"
+                  aria-label="Votre email"
+                  aria-describedby="button-addon2"
+                />
+
+                <button
+                  class="btn btn-outline-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  S'abonner à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2024 Hotel Chambord. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Mentions légales</a>
+              </li>
+              <li class="list-inline-item">·</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Plan du site</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+    <!-- Bootstrap Js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script2.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        loadCart();
+      });
+
+      function loadCart() {
+        const cartContent = document.getElementById("cartContent");
+        const reservationData = JSON.parse(
+          sessionStorage.getItem("reservation")
+        );
+
+        if (!reservationData) {
+          showEmptyCart();
+          return;
+        }
+
+        const roomImages = {
+          classique: "images/chambre/chambre_classique.webp",
+          confort: "images/chambre/chambre_confort.webp",
+          deluxe: "images/chambre/chambre_deluxe.webp",
+        };
+
+        const html = `
+                <div class="cart-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="${
+                              roomImages[reservationData.room]
+                            }" alt="Chambre ${
+          reservationData.room
+        }" class="room-image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="item-details">
+                                <h3 class="item-title">Chambre ${
+                                  reservationData.room.charAt(0).toUpperCase() +
+                                  reservationData.room.slice(1)
+                                }</h3>
+                                <div class="detail-row">
+                                    <span>Dates</span>
+                                    <span>${reservationData.dates[0]} - ${
+          reservationData.dates[1]
+        } janvier 2025</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Voyageurs</span>
+                                    <span>${
+                                      reservationData.adults
+                                    } adulte(s), ${
+          reservationData.children
+        } enfant(s)</span>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Prix total</span>
+                                    <span>${reservationData.total}</span>
+                                </div>
+                                <button class="btn-remove" onclick="removeFromCart()">
+                                    <i class="fas fa-trash"></i> Supprimer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price-details">
+                    <div class="detail-row">
+                        <span>Sous-total</span>
+                        <span>${reservationData.total}</span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Taxes (20%)</span>
+                        <span>${(
+                          parseFloat(reservationData.total) * 0.2
+                        ).toFixed(2)}€</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Total</span>
+                        <span>${(
+                          parseFloat(reservationData.total) * 1.2
+                        ).toFixed(2)}€</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary w-100 mt-4" onclick="showCheckoutForm()">
+                    Procéder au paiement
+                </button>
+            `;
+
+        cartContent.innerHTML = html;
+      }
+
+      function showEmptyCart() {
+        const cartContent = document.getElementById("cartContent");
+        cartContent.innerHTML = `
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h2>Votre panier est vide</h2>
+                    <p>Retournez à la page des chambres pour faire une réservation.</p>
+                    <a href="chambre.html" class="btn btn-primary mt-3">Voir les chambres</a>
+                </div>
+            `;
+      }
+
+      function removeFromCart() {
+        sessionStorage.removeItem("reservation");
+        showEmptyCart();
+      }
+
+      function showCheckoutForm() {
+        document.getElementById("cartContent").style.display = "none";
+        document.getElementById("checkoutForm").style.display = "block";
+      }
+
+      function selectPaymentMethod(method) {
+        document.querySelectorAll(".payment-method").forEach((el) => {
+          el.classList.remove("selected");
+        });
+        event.currentTarget.classList.add("selected");
+
+        const cardDetails = document.getElementById("cardDetails");
+        cardDetails.style.display = method === "card" ? "block" : "none";
+      }
+
+      document
+        .getElementById("paymentForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert(
+            "Réservation confirmée ! Un email de confirmation vous sera envoyé prochainement."
+          );
+          sessionStorage.removeItem("reservation");
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>

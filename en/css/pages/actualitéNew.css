@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #0c2461;
+  --secondary-color: #d4af37;
+  --text-color: #303030;
+  --background-color: #f9f7f5;
+  --font-title: "Playfair Display", serif;
+  --font-body: "Lato", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.blog-header {
+  background-color: var(--text-color);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+h5 {
+  font-family: var(--font-title);
+}
+.blog-header h1 {
+  font-family: var(--font-title);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.section-title {
+  font-family: var(--font-title);
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.featured-post-large,
+.featured-post-small,
+.post-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.post-content {
+  padding: 1.5rem;
+}
+
+.post-title {
+  font-family: var(--font-title);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.post-excerpt {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.read-more {
+  color: var(--primary-color);
+  padding: 10px 13px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: white;
+}
+
+.read-more:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.blog-pagination {
+  margin-top: 3rem;
+}
+
+.page-link {
+  color: var(--primary-color);
+}
+
+.page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Catégories début */
+.categories {
+  padding: 1rem 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.categories .section-title {
+  font-family: var(--font-title);
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.categories .btn {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  border: none;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.categories .btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+/* Catégories fin */
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}

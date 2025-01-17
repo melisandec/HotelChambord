@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mélisande Cornet" />
+    <meta name="description" content="Site vitrine de l'Hotel Chambord" />
+
+    <title>Restaurant</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.webp" /> 
+
+    <!--! -- CDN -- -->
+    <!-- fichier css -->
+    <link rel="stylesheet" href="css/pages/restaurant.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Font CDN pour les fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Girassol&family=Libre+Caslon+Display&family=Roboto:wght@600&display=swap"
+    rel="stylesheet"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+    />
+
+    <!-- font awesome icons CDN -->
+    <script
+    src="https://kit.fontawesome.com/29e60fcc8f.js"
+    crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <!-- LOGO START -->
+          <!-- H1 - nom hotel + 5 icones avec étoiles-->
+          <h1 class="logo">Hotel Chambord</h1>
+          <div class="d-flex justify-content-center">
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+            <i class="fa-solid fa-star fa-xs"></i>
+          </div>
+        </a>
+        <!-- LOGO END -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <!-- Acceuil -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Acceuil</a
+              >
+            </li>
+            <!-- Chambre -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Chambre</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="chambre.html"
+                    >Voir toutes les gammes</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="chambre.html#classique"
+                    >Classique</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="chambre.html#confort"
+                    >Confort</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="chambre.html#deluxe"
+                    >Deluxe</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="chambre.html#suite">Suite</a>
+                </li>
+              </ul>
+            </li>
+            <!-- Restaurant -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Restaurant</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="restaurant.html"
+                    >Découvrez notre restaurant</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="restaurant.html#carte-brasserie"
+                    >Carte Brasserie</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="restaurant.html#carte-degustation"
+                    >Carte Dégustation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="restaurant.html#carte-restaurant"
+                    >Carte Restaurant</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- Spa -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Le Spa</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="spa.html"
+                    >Le Spa et nos Soins</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="spa.html#soin-detente"
+                    >Soin Détente</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="spa.html#soin-decouverte"
+                    >Soin Découverte</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="spa.html#soin-relaxant"
+                    >Soin Relaxant</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="spa.html#soin-plaisir"
+                    >Soin Plaisir</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="spa.html#soin-evasion"
+                    >Soin Evasion</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- Reservation -->
+            <li class="nav-item">
+              <a class="nav-link" href="reservation.html" target="_blank"
+                >Réservation</a
+              >
+            </li>
+            <!-- Avis -->
+            <li class="nav-item">
+              <a class="nav-link" href="avis.html">Avis</a>
+            </li>
+            <!-- Hotel -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >L'hôtel</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="hotel.html" target="_blank"
+                    >Qui sommes-nous?</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hotel.html#acces">Accès</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hotel.html#contact"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hotel.html#carriere"
+                    >Recrutement</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hotel.html#evenement"
+                    >Evénement</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="hotel.html#presse">Presse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="actualités.html">Actualités</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="hotel.html#contact">Contact</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex me-2" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Rechercher"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-sucess"
+              type="submit"
+              title="Rechercher"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div>
+            <a
+              href="panier.html#modal-content"
+              class="btn btn-outline-sucess"
+            >
+              <i class="fa fa-shopping-cart"></i>Panier
+            </a>
+          </div>
+          <div class="language-selector ms-2">
+            <a href="#" class="btn btn-link p-0 me-2" id="fr-lang">
+              <img src="images/france.webp" alt="Français" />
+            </a>
+            <a href="#" class="btn btn-link p-0" id="en-lang">
+              <img src="images/united-kingdom.webp" alt="English" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- fin header -->
+    <!-- boutton flottant réserver -->
+    <button id="reservationButton" class="floating-button">
+        <i class="fas fa-calendar-alt"></i> Réserver
+    </button>
+    <!-- boutton scroll up -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="scrollup">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- boutton scroll up end -->
+    <!-- Main -->
+    <section id="presentation" class="parallax m-0">
+      <div class="overlay text-center">
+        <br>
+        <h1 class="text-center"> Le Restaurant </h1>
+        <br>
+        <h2 class="text-center"> Une expérience gastronomique d'exception</h2>
+        <hr>
+        <p>Niché au cœur de l'Hôtel Chambord, notre restaurant vous invite à un voyage culinaire inoubliable.</p>
+        <h5>Dress Code</h5>
+        <p>Élégant et raffiné. Nous recommandons une tenue de soirée pour le dîner. Les messieurs sont priés de porter une veste.</p>
+        <h5>Politique fumeur</h5>
+        <p>Le Chambord est un établissement non-fumeur. Une zone fumeur est disponible sur notre terrasse.</p>
+      </div>
+    </section>
+    <section id="carousel-booking" class="row m-0">
+    <!-- Carrousel Bootstrap -->
+    <div id="carouselRestaurant" class="carousel slide col-md-9 p-0" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="images/histoire-restaurant.webp" class="d-block w-100" alt="Histoire du restaurant"> 
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Notre Histoire</h5>
+                  <p>Fondé en 2023, Le Chambord perpétue l'excellence de la gastronomie française tout en innovant constamment.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="images/architecture-restaurant.webp" class="d-block w-100" alt="Architecture du restaurant">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Notre Architecture</h5>
+                  <p>Un mélange harmonieux de style Art déco et de modernité, créant une ambiance unique et raffinée.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="images/chef-restaurant.webp" class="d-block w-100" alt="Notre Chef">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Notre Chef</h5>
+                  <p>Le Chef étoilé Jean-Pierre Dubois apporte sa créativité et son expertise à chaque plat.</p>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselRestaurant" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselRestaurant" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+      </button>
+  </div>
+  <!-- Fin Carrousel -->
+  <!-- debut booking card -->
+  <div class="col-lg-3 p-0">
+    <div class="card booking" >
+      <div class="card-body">
+                <h5 class="card-title">Le Chambord</h5>
+                <p class="card-text">Restaurant gastronomique 5 étoiles</p>
+                <a href="#" class="btn btn-primary mb-2">Voir mes réservations</a>
+                <a href="#" class="btn btn-success mb-2">Réserver maintenant</a>
+                <hr>
+                <p><strong>Adresse :</strong><br>123 Avenue des Champs-Élysées, 75008 Paris</p>
+                <p><strong>Email :</strong><br>reservations@lechambordhp.com</p>
+                <p><strong>Téléphone :</strong><br>+33 (0)1 23 45 67 89</p>
+                <p><strong>Horaires :</strong><br>
+                Déjeuner : 12h00 - 14h30 (Lun-Ven)<br>
+                Dîner : 19h00 - 22h00 (Mar-Sam)</p>
+      </div>
+    </div>
+  </div>
+  <!-- fin booking card -->
+  </section>
+  <!-- debut des section avec les menus -->
+  <main class="container-fluid p-0">
+    <div class="row">
+      <!-- debut Carte Restaurant -->
+      <!-- BEFORE <section class="row vh-100 m-0" id="carte-brasserie"> -->
+        <section class="row vh-100 m-0" id="carte-brasserie">
+          <div class="col-md-6 d-flex align-items-center justify-content-center bg-white">
+              <div class="text-center">
+                  <h2 class="text-secondary">La brasserie</h2>
+                  <p>Le déjeuner raffiné</p>
+                  <img src="images/other1.webp" alt="Salle de restaurant brasserie" class="img-fluid">
+              </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark-gray">
+              <div class="text-center">
+                  <h2 class="text-white mb-4">Carte Brasserie</h2>
+                  <hr class="text-white">
+                    <div class="row">
+                        <div>
+                            <h3 class="h4 text-white">Menu Express - 45€</h3>
+                            <ul class="list-unstyled">
+                                <li class="text-white">Entrée du jour</li>
+                                <li class="text-white">Plat du marché</li>
+                                <li class="text-white">Café gourmand</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="h4 text-white">À la carte</h3>
+                            <ul class="list-unstyled">
+                            <li class="text-white">Salade Chambord (mesclun, foie gras, figues) - 22€</li>
+                            <li class="text-white">Tartare de bœuf Charolais - 26€</li>
+                            <li class="text-white">Filet de bar, émulsion au champagne - 32€</li>
+                            </ul>
+                        </div>
+                    </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- Debut Carte Degustation -->
+      <section class="row vh-100 m-0"  id="carte-degustation">
+        <!-- Coté gauche - fond gris - menu -->
+          <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark-gray">
+              <div class="text-center">
+                    <h2 class="text-white mb-4">Carte Dégustation</h2>
+                    <hr class="text-white">
+                    <div class="row">
+                        <h3 class="h4 text-white">Afternoon Tea à la française <br> 55€ par personne</h3>
+                        <ul class="list-unstyled">
+                            <li class="text-white">Sélection de thés grands crus</li>
+                            <li class="text-white">Assortiment de pâtisseries du Chef</li>
+                            <li class="text-white">Mini sandwichs gourmands</li>
+                            <li class="text-white">Scones maison, crème et confitures</li>
+                        </ul>
+                    </div>
+              </div>
+          </div>
+          <!-- coté droite - fond blanc - text + image -->
+          <div class="col-md-6 d-flex align-items-center justify-content-center bg-white">
+              <div class="text-center">
+                  <h2 class="text-secondary">L'après-midi gourmand</h2>
+                  <p class="text-secondary"> Tous les jours, 15h00 - 18h00</p>
+                  <p class="text-secondary">L’art du Tea Time à la française</p>
+                  <img src="images/resto1.webp" alt="Notre somptueux Afternoon Tea à la française" class="img-fluid rounded">
+              </div>
+          </div>
+      </section>
+      
+      <!-- carte restaurant -->
+      <section class="row vh-100 m-0" id="carte-restaurant">
+          <div class="col-md-6 d-flex align-items-center justify-content-center bg-white">
+              <div class="text-center">
+                  <h2 class="text-secondary">Une expérience gastronomique signée  <br> Jean-Pierre Dubois</h2>
+                  <p class="text-secondary">Du mardi au samedi, 19h00 - 22h00</p>
+                  <p class="text-secondary">Bienvenue dans l'univers culinaire raffiné du Chef Jean-Pierre Dubois, où chaque plat est une œuvre d'art, alliant créativité et excellence. Laissez-vous transporter par des saveurs exquises, sublimées par des produits d'exception et une maîtrise parfaite des techniques gastronomiques.</p>
+                  <img src="images/resto3.webp" alt="Chef's signature dish" class="img-fluid ">
+              </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center bg-dark-gray">
+              <div class="text-center">
+                  <h2 class="text-white">Carte Restaurant</h2>
+                  <hr class="text-white">
+                  <div class="row menu">
+                    <div class="col-md-5 menu">
+                    <h3 class="h4 text-white">Menu Découverte <br> 120€</h3>
+                    <ul>
+                      <li class="text-white">Amuse-bouche</li>
+                      <li class="text-white">Entrée au choix</li>
+                      <li class="text-white">Poisson ou Viande</li>
+                      <li class="text-white">Pré-dessert</li>
+                      <li class="text-white">Dessert</li>
+                    </ul>
+                  </div>
+                    <div class="col-md-1">
+                    <hr class="vertical">
+                  </div>
+                    <div class="col-md-6 menu">
+                      <h3 class="h4 text-white">Menu Dégustation <br> 180€</h3>
+                      <ul>
+                        <li class="text-white">Série d'amuse-bouches</li>
+                        <li class="text-white">Deux entrées</li>
+                        <li class="text-white">Poisson</li>
+                        <li class="text-white">Viande</li>
+                        <li class="text-white">Fromage</li>
+                        <li class="text-white">Pré-dessert</li>
+                        <li class="text-white">Dessert</li>
+                        <li class="text-white">Mignardises</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <hr class="text-white">
+                  <div class="a-la-carte">
+                      <h3 class="h4 text-white">Quelques plats à la carte</h3>
+                      <ul>
+                          <li class="text-white">Caviar Osciètre, blinis maison - 95€</li>
+                          <li class="text-white">Homard bleu en deux services - 78€</li>
+                          <li class="text-white">Pigeon de Bresse, sauce au vin de Chambertin - 65€</li>
+                          <li class="text-white">Soufflé au Grand Marnier - 25€</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- FIN  -->
+         
+      </div>
+        
+      
+    </div>
+</main>
+<nav id="sidebar-menu">
+  <ul>
+      <li><a href="#presentation" class="active">Notre Restaurant</a></li>
+      <li><a href="#carte-brasserie">Brasserie</a></li>
+      <li><a href="#carte-degustation">Dégustation</a></li>
+      <li><a href="#carte-restaurant">Restaurant</a></li>
+  </ul>
+</nav>
+
+    <!-- footer Begins -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Hotel Chambord</h5>
+            <p>1 Avenue Montaigne<br />75008 Paris, France</p>
+            <p>
+              Tél : +33 (0)1 23 45 67 89<br />Email : contact@hotelchambord.com
+            </p>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Liens rapides</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white">Accueil</a>
+              </li>
+              <li>
+                <a href="chambre.html" class="text-white">Chambres & Suites</a>
+              </li>
+              <li>
+                <a href="restaurant.html" class="text-white">Restaurant</a>
+              </li>
+              <li>
+                <a href="spa.html" class="text-white">Spa & Bien-être</a>
+              </li>
+              <li>
+                <a href="reservation.html" class="text-white">Réservations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Informations</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="hotel.html#qui-sommes-nous" class="text-white"
+                  >Qui sommes-nous ?</a
+                >
+              </li>
+              <li>
+                <a href="hotel.html#carriere" class="text-white">Carrières</a>
+              </li>
+              <li>
+                <a href="hotel.html#presse" class="text-white">Presse</a>
+              </li>
+              <li><a href="#" class="text-white">Conditions générales</a></li>
+              <li>
+                <a href="#" class="text-white">Politique de confidentialité</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-uppercase mb-4 footer-h5">Suivez-nous</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Votre email"
+                  aria-label="Votre email"
+                  aria-describedby="button-addon2"
+                />
+
+                <button
+                  class="btn btn-outline-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  S'abonner à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2024 Hotel Chambord. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Mentions légales</a>
+              </li>
+              <li class="list-inline-item">·</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Plan du site</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+
+
+
+<!-- Scripts JavaScript de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="script/script2.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section[id]');
+    const menuItems = document.querySelectorAll('#sidebar-menu a');
+
+    function onScroll() {
+      let scrollPosition = window.pageYOffset;
+
+    sections.forEach(section => {
+    if (scrollPosition >= section.offsetTop - 50 && 
+      scrollPosition < (section.offsetTop + section.offsetHeight - 50)) {
+        menuItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href').substring(1) === section.getAttribute('id')) {
+            item.classList.add('active');
+          }
+        });
+    }
+  });
+  }
+  window.addEventListener('scroll', onScroll);
+  });
+</script>
+
+</html>

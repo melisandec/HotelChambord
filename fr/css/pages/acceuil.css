@@ -1,0 +1,165 @@
+/*! définition de variables pour le style global du site*/
+:root {
+  /* color palette */
+  --blue: #0c2461;
+  --gold: #d4af37;
+  --white: #f9f7f5;
+  --grey: #303030;
+  /* font family */
+  --maintitle: "Girassol", serif;
+  --subtitle: "Libre Caslon Display", serif;
+  --text: "Roboto", serif;
+
+  /* animation */
+  --animate-duration: 2s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+body {
+  background-color: var(--white);
+}
+/* CSS ACCEUIL SECTION 1 */
+
+.hotel-features {
+  background-color: var(--grey);
+  color: var(--white);
+  box-shadow: 1px 1px 10px rgb(36, 36, 36);
+}
+.hotel-features .card {
+  background-color: var(--white);
+  margin-top: 10px;
+  border: none;
+  color: var(--grey);
+  box-shadow: inset 1px 1px 10px var(--grey);
+}
+.hotel-features .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.hotel-features .btn-primary {
+  background-color: var(--grey);
+  border-color: var(--grey);
+  color: var(--white);
+  font-family: var(--text);
+}
+.hotel-features .btn-primary:hover {
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+  color: var(--grey);
+}
+.sub {
+  font-family: var(--maintitle);
+  font-size: 25px;
+}
+.caption {
+  font-family: var(--subtitle);
+}
+/* floating effet scroll */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.icon-features {
+  color: var(--grey);
+  background-color: var(--white);
+}
+.icon-features h2,
+h5 {
+  font-family: var(--subtitle);
+  color: var(--grey);
+}
+.icon-features div {
+  font-family: var(--text);
+  font-size: 0.8rem;
+}
+/* END CSS ACCEUIL SECTION 1 */
+.icon-features div i {
+  font-size: 1.5rem;
+  color: var(--grey);
+  margin-bottom: 10px;
+}
+h5 a {
+  text-decoration: none;
+  color: var(--grey);
+  font-style: italic;
+}
+h5 a:hover {
+  color: var(--gold);
+  text-emphasis: bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.504);
+  color: #d4af37;
+}
+.history .btn-primary,
+.restaurant .btn-primary {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--grey);
+  font-family: var(--text);
+  box-shadow: 1px 1px 5px rgb(36, 36, 36);
+}
+
+.history .btn-primary:hover,
+.restaurant .btn-primary:hover {
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+  color: var(--grey);
+}
+.history img,
+.restaurant img {
+  box-shadow: 1px 1px 10px rgb(36, 36, 36);
+}
+.history,
+.restaurant {
+  background-color: var(--grey);
+  border: none;
+  color: var(--white);
+  box-shadow: 1px 1px 10px var(--grey);
+}
+.chambre-hotel,
+.spa {
+  background-color: var(--white);
+  color: var(--grey);
+  box-shadow: inset 1px 1px 10px var(--grey);
+}
+.chambre-hotel .btn-primary,
+.spa .btn-primary {
+  background-color: var(--grey);
+  border-color: var(--grey);
+  box-shadow: 1px 1px 5px var(--grey);
+  font-family: var(--text);
+  color: var(--white);
+}
+.chambre-hotel .btn-primary:hover,
+.spa .btn-primary:hover {
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+  color: var(--grey);
+}
+.chambre-hotel img,
+.spa img {
+  box-shadow: 1px 1px 10px var(--grey);
+}
+.avis {
+  background-color: var(--grey);
+  color: var(--white);
+  box-shadow: 1px 1px 10px var(--grey);
+}
+.avis .card {
+  background-color: var(--grey);
+  color: var(--white);
+  border: none;
+}

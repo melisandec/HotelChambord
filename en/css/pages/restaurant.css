@@ -1,0 +1,152 @@
+/*! définition de variables pour le style global du site*/
+:root {
+  /* color palette */
+  --blue: #0c2461;
+  --gold: #d4af37;
+  --white: #f9f7f5;
+  --grey: #303030;
+  /* font family */
+  --maintitle: "Girassol", serif;
+  --subtitle: "Libre Caslon Display", serif;
+  --text: "Roboto", serif;
+
+  /* animation */
+  --animate-duration: 2s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+
+.booking {
+  top: 20px;
+}
+#presentation h2,
+#presentation p,
+#presentation h3 {
+  font-family: var(--subtitle);
+}
+
+h2,
+h5 {
+  font-family: var(--maintitle);
+  color: var(--gold);
+}
+h3 {
+  font-family: var(--maintitle);
+  color: var(--blue);
+}
+h4 {
+  font-family: var(--subtitle);
+  color: var(--gold);
+}
+p,
+li {
+  font-family: var(--text);
+}
+h1 {
+  font-family: var(--maintitle);
+}
+.vh-100 {
+  height: 100vh;
+}
+.bg-light-gray {
+  background-color: var(--white);
+}
+.bg-dark-gray {
+  background-color: var(--grey);
+}
+/* class de la bar hr */
+.vertical {
+  width: 1px;
+  height: 300px;
+  margin: 10px auto;
+  background-color: white;
+  border: none;
+}
+/* en responsible elle redevient horizontal */
+@media (max-width: 768px) {
+  .vertical {
+    width: 80%; /* ou la largeur souhaitée */
+    height: 1px;
+    margin: 20px auto;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+/* parallax class */
+.parallax {
+  background-image: url("../../images/other1.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.parallax .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(214, 213, 213, 0.785);
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.parallax .content {
+  color: white;
+  text-align: center;
+}
+
+.parallax-section {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.parallax-section h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.slide-up {
+  transform: translateY(-100%) !important;
+}
+
+.slide-down {
+  transform: translateY(0) !important;
+}
+
+.slide-up-1 {
+  transform: translateY(-100%) !important;
+}
+.slide-up-2 {
+  transform: translateY(-200%) !important;
+}
+.slide-up-3 {
+  transform: translateY(-300%) !important;
+}
+.slide-up-4 {
+  transform: translateY(-400%) !important;
+}
+
+.slide-down-0 {
+  transform: translateY(0) !important;
+}
+.slide-down-1 {
+  transform: translateY(100%) !important;
+}
+.slide-down-2 {
+  transform: translateY(200%) !important;
+}
+.slide-down-3 {
+  transform: translateY(300%) !important;
+}

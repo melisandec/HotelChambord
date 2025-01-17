@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Chambord - À Propos de nous</title>
+    <meta name="author" content="Mélisande Cornet" />
+    <meta name="description" content="A propos de l'Hotel Chambord" />
+    <link rel="icon" type="image/x-icon" href="images/logo.webp" />
+
+    <!-- fichier css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages/about.css" />
+    <link rel="stylesheet" href="css/pages/recrutement.css">
+    <!-- Google Font CDN pour les fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Libre+Caslon+Display&family=Roboto:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/29e60fcc8f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <!-- LOGO START -->
+            <!-- H1 - nom hotel + 5 icones avec étoiles-->
+            <h1 class="logo">Hotel Chambord</h1>
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+            </div>
+          </a>
+          <!-- LOGO END -->
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <!-- Acceuil -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Acceuil</a
+                >
+              </li>
+              <!-- Chambre -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Chambre</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="chambre.html"
+                      >Voir toutes les gammes</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#classique"
+                      >Classique</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#confort"
+                      >Confort</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#deluxe"
+                      >Deluxe</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#suite">Suite</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Restaurant -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Restaurant</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="restaurant.html"
+                      >Découvrez notre restaurant</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-brasserie"
+                      >Carte Brasserie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-degustation"
+                      >Carte Dégustation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-restaurant"
+                      >Carte Restaurant</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Spa -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Le Spa</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="spa.html"
+                      >Le Spa et nos Soins</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-detente"
+                      >Soin Détente</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-decouverte"
+                      >Soin Découverte</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-relaxant"
+                      >Soin Relaxant</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-plaisir"
+                      >Soin Plaisir</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-evasion"
+                      >Soin Evasion</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Reservation -->
+              <li class="nav-item">
+                <a class="nav-link" href="reservation.html" target="_blank"
+                  >Réservation</a
+                >
+              </li>
+              <!-- Avis -->
+              <li class="nav-item">
+                <a class="nav-link" href="avis.html">Avis</a>
+              </li>
+              <!-- Hotel -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >L'hôtel</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="hotel.html" target="_blank"
+                      >Qui sommes-nous?</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#acces">Accès</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#contact"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#carriere"
+                      >Recrutement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#evenement"
+                      >Evénement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#presse">Presse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="actualités.html">Actualités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hotel.html#contact">Contact</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex me-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Rechercher"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-sucess"
+                type="submit"
+                title="Rechercher"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div>
+              <a
+                href="panier.html#modal-content"
+                class="btn btn-outline-sucess"
+              >
+                <i class="fa fa-shopping-cart"></i>Panier
+              </a>
+            </div>
+            <div class="language-selector ms-2">
+              <a href="#" class="btn btn-link p-0 me-2" id="fr-lang">
+                <img src="images/france.webp" alt="Français" />
+              </a>
+              <a href="#" class="btn btn-link p-0" id="en-lang">
+                <img src="images/united-kingdom.webp" alt="English" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- fin header -->
+    <!-- start boutton flottant réserver -->
+    <button id="reservationButton" class="floating-button">
+      <i class="fas fa-calendar-alt"></i> Réserver
+    </button>
+    <!-- end boutton flottant réserver -->
+    <!-- boutton scroll up -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="scrollup">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- boutton scroll up end -->
+    <!-- HOTEL / QUI SOMMES NOUS -->
+    <section class="hero-section" id="qui-sommes-nous">
+      <div class="hero-overlay">
+        <h2 class="animate__fadeInDown animate__animated gold">
+          Bienvenue à l'Hôtel Chambord
+        </h2>
+        <h3 class="animate__fadeInUp animate__animated">
+          Luxe intemporel au cœur de Paris
+        </h3>
+      </div>
+    </section>
+
+    <!-- start main -->
+    <div class="container py-5">
+      <section class="row mb-5 fade-in-section">
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <h2 class="display-4 mb-4 gold">Notre Histoire</h2>
+          <img
+            src="images/about1.webp"
+            alt="Elegant Parisian hotel facade, Art Nouveau style, golden details, warm lighting, evening atmosphere"
+            class="img-fluid rounded mb-4"
+          />
+          <p class="sub">
+            Bienvenue à l'Hôtel Chambord, joyau de l'hôtellerie parisienne né de
+            la passion pour l'art de vivre à la française. Inauguré en décembre
+            2024, notre établissement incarne l'alliance parfaite entre le luxe
+            intemporel et l'innovation moderne.
+          </p>
+        </div>
+      </section>
+
+      <section class="row mb-5 fade-in-section">
+        <div class="col-md-6">
+          <h2 class="mb-3 gold">Des Racines Profondes</h2>
+          <p>
+            L'histoire de l'Hôtel Chambord remonte à la Belle Époque, lorsque
+            notre bâtiment abritait un célèbre salon littéraire fréquenté par
+            les plus grands écrivains et artistes du début du 20e siècle. Ce
+            riche héritage culturel imprègne chaque recoin de notre
+            établissement.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="images/about2.webp"
+            alt="Vintage photograph of Parisian street in 1920s, sepia tones, elegant people in front of a grand building"
+            class="img-fluid rounded"
+          />
+        </div>
+      </section>
+      <section class="row mb-5 fade-in-section">
+        <div class="col-md-6 order-md-2">
+          <h2 class="mb-3">Une Renaissance Contemporaine</h2>
+          <p>
+            Après des années de restauration minutieuse, l'Hôtel Chambord a
+            ouvert ses portes, offrant à ses hôtes une expérience unique alliant
+            le charme historique à un confort ultramoderne. Nos 78 chambres et
+            suites, chacune unique, sont de véritables havres de paix au cœur de
+            la Ville Lumière.
+          </p>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <img
+            src="images/about3.webp"
+            alt="Modern luxury hotel lobby, Art Deco influences, crystal chandeliers, marble floors, golden accents"
+            class="img-fluid rounded"
+          />
+        </div>
+      </section>
+      <section class="row mb-5 fade-in-section">
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <h2 class="display-4 mb-4">Notre Vision</h2>
+          <p class="sub">
+            À l'Hôtel Chambord, nous croyons que le luxe de demain se définit
+            par une expérience personnalisée et durable. Notre stratégie de
+            développement s'articule autour de trois piliers fondamentaux :
+          </p>
+        </div>
+      </section>
+
+      <section class="row mb-5 fade-in-section">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/about.webp"
+              alt="Eco-friendly hotel rooftop garden, solar panels, beehives, and vertical gardens with Eiffel Tower in background"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title mb-3">Innovation Technologique</h2>
+              <p class="card-text">
+                Nous intégrons les dernières innovations pour offrir à nos
+                clients une expérience fluide et intuitive, de la réservation au
+                check-out. Notre application mobile permet un contrôle total de
+                l'environnement de la chambre et facilite l'accès à nos services
+                exclusifs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/about5.webp"
+              alt="Eco-friendly hotel rooftop garden, solar panels, beehives, and vertical gardens with Eiffel Tower in background"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title mb-3">Durabilité et Responsabilité</h2>
+              <p class="card-text">
+                L'Hôtel Chambord s'engage fermement dans une démarche
+                écoresponsable. Notre toit végétalisé, nos panneaux solaires et
+                notre politique zéro déchet témoignent de notre volonté de
+                préserver l'environnement tout en offrant une expérience de
+                luxe.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img
+              src="images/about6.webp"
+              alt="Gourmet restaurant interior, Art Nouveau style, chefs preparing exquisite dishes in open kitchen"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h2 class="card-title mb-3">Excellence Gastronomique</h2>
+              <p class="card-text">
+                Notre restaurant étoilé, "L'Éclat", dirigé par le chef renommé
+                Sophie Dubois, propose une cuisine innovante qui célèbre les
+                produits locaux et de saison. Notre cave à vins, riche de plus
+                de 5000 références, ravira les palais les plus exigeants.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row fade-in-section">
+        <div class="col-lg-8 offset-lg-2">
+          <h2 class="display-4 mb-4 text-center">Notre Engagement</h2>
+          <p>
+            À l'Hôtel Chambord, nous nous efforçons de créer des moments
+            inoubliables pour nos hôtes. Notre équipe dévouée, formée aux plus
+            hauts standards de l'hôtellerie de luxe, s'engage à offrir un
+            service personnalisé et attentionné à chacun de nos clients.
+          </p>
+          <p>
+            Nous vous invitons à découvrir l'art de vivre à la parisienne dans
+            son expression la plus raffinée. L'Hôtel Chambord n'est pas
+            seulement un lieu de séjour, c'est une destination en soi, où chaque
+            détail est pensé pour émerveiller et inspirer.
+          </p>
+          <p class="text-center mt-4 sub">
+            Bienvenue chez vous, bienvenue à l'Hôtel Chambord.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!--! HOTEL/ ACCES -->
+    <section class="row fade-in-section" id="acces">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h2 class="display-4 mb-4 gold">Accès</h2>
+        <p>
+          Situé au cœur du 8e arrondissement de Paris, à deux pas des Champs
+          Élysées et de l'Arc de Triomphe, l'Hôtel Chambord est le point de
+          départ idéal pour découvrir la capitale. Notre établissement est
+          facilement accessible en voiture, en transports en commun ou en taxi.
+        </p>
+        <!-- iframe google map de la localisation -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2624.607213944497!2d2.3005650764648475!3d48.86569997133316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDjCsDUxJzU2LjUiTiAywrAxOCcxMS4zIkU!5e0!3m2!1sen!2sfr!4v1736761246151!5m2!1sen!2sfr"
+          allowfullscreen=""
+          title="map"
+          id="map"
+          alt="carte de Paris avec la localisation de l'Hotel Chambord, 1 Avenue Montaigne, 75008 Paris"
+          class="img-fluid rounded mb-4 lazy"
+        ></iframe>
+        <p>
+          Pour toute question ou demande d'information, n'hésitez pas à
+          contacter notre équipe de conciergerie, disponible 24h/24 et 7j/7.
+        </p>
+      </div>
+    </section>
+    <!--? section ACCES end -->
+
+    <!--! section HOTEL/ CONTACT start -->
+    <section class="row fade-in-section" id="contact">
+      <!-- formulaire de contact aaccessible sur le site pour toute demande d'info -->
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h2 class="display-4 mb-4">Contactez nous</h2>
+        <p>
+          Notre équipe de conciergerie est disponible <strong>24h/24</strong> et <strong>7j/7</strong> pour répondre à vos questions ou demandes spéciales.
+        </p>
+        <!-- titre avec logo qui bouge -->
+        <div class="header">
+          <h2 class="h1">Hôtel Chambord</h2>
+        </div>
+        <!-- Form start -->
+        <form method="post" class="p-4 shadow-lg bg-white rounded-2">
+          <div class="row">
+            <!-- colonne de gauche -->
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="contact-form">
+                  <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nom"
+                  required
+                  />
+                </div>
+                <div class="contact-form">
+                  <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Prénom"
+                  required
+                  />
+                </div>
+                <div class="contact-form">
+                  <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Entreprise"
+                  required
+                  />
+                </div>
+                <div class="contact-form">
+                  <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Email"
+                  />
+                </div>
+                <div class="contact-form">
+                  <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Pays"
+                  />
+                </div>
+
+              </div>
+            </div>
+            <!-- column 2 -->
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="contact-form">
+                  <input type="text" class="form-control" placeholder="Sujet" required />
+                </div>
+                <div class="contact-form">
+                  <select class="form-select" title="Catégorie" required>
+                    <option value="" selected disabled hidden>
+                      Catégorie
+                    </option>
+                    <option value="1">Chambre</option>
+                    <option value="2">Restaurant</option>
+                    <option value="3">Spa</option>
+                    <option value="4">Ordre général</option>
+                </div>
+                <div class="contact-form">
+                  <span>Ecrivez votre Message ...</span>
+                  <textarea
+                  type="text"
+                  class="form-control"
+                  placeholder="Message"
+                  required
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <!-- Bouton ENVOYER -->
+            <div class="text-center">
+              <button type="submit" class="btn-lg px-5 mt-3 bouton button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Envoyer
+              </button>
+            </div>
+            <!-- FIN BOUTON ENVOYER -->
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--? section CONTACT end  -->
+
+    <!--! section HOTEL/ CARRIERE start-->
+    <section class="row fade-in-section" id="carriere">
+      <!-- Formulaire de recrutement -->
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h2 class="display-4 mb-4">Rejoignez Nous</h2>
+        <p>
+          Nous sommes toujours à la recherche de talents passionnés pour rejoindre notre équipe. N'hésitez pas à nous envoyer votre candidature.
+        </p>
+        <!-- titre avec logo qui bouge -->
+        <div class="header">
+          <h2 class="h1">Hôtel Chambord</h2>
+        </div>
+        <!-- Form start -->
+        <form method="post" class="p-4 mb-5 shadow-lg bg-white rounded-2">
+          <div class="row">
+            <!-- colonne de gauche -->
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="contact-form">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nom"
+                    required
+                  />
+                </div>
+                <div class="contact-form">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Prénom"
+                    required
+                  />
+                </div>
+                <div class="contact-form">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Entreprise actuelle"
+                  />
+                </div>
+                <div class="contact-form">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="contact-form">
+                  <label for="cv" class="form-label">CV (PDF)</label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="cv"
+                    accept=".pdf"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- column 2 -->
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="contact-form">
+                  <textarea
+                    class="form-control"
+                    placeholder="Message complémentaire"
+                    rows="8"
+                  ></textarea>
+                </div>
+                <div class="contact-form">
+                  <label for="lettre" class="form-label">Lettre de motivation (PDF)</label>
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="lettre"
+                    accept=".pdf"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Bouton ENVOYER -->
+            <div class="text-center">
+              <button type="submit" class="btn-lg px-5 mt-3 bouton button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                
+                Envoyer ma candidature
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--? section CARRIERE end -->
+
+    <!--! section HOTEL/ EVENEMENTS start-->
+    <section class="row fade-in-section" id="evenement">
+      <!-- page de video récapitulant les derniers évenemnts. Directement téléchargées sur le serveur ou etre diffusées via youtube -->
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h2 class="display-4 mb-4 gold">Événements</h2>
+        <p>
+          Découvrez les derniers événements organisés à l'Hôtel Chambord et plongez dans l'univers de l'art, de la culture et de la gastronomie.
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/z32c9GZlXQc?si=3uezA3je1pzdmmaR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KOKfK7J08W4?si=aWi7rTgxS6jhAt5r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/F7YpzD6Ir4o?si=J6auW9ny-qULSzU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/3ce9Ge9GnnY?si=3au1eNRuVeAl99gC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/zDg_GJ_NGH0?si=xCQt6Cmgti7YzIQx&amp;controls=0&amp;start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9LGVweKeEr4?si=LADnfQbts35ypy7t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </section>
+    <!--? section EVENEMENT end -->
+
+    <!--! section HOTEL/ PRESSE start-->
+    <section class="row fade-in-section" id="presse">
+    <!-- Page présentant les références (articles de journaux, etc.) -->
+    <!-- prévoire du faux contenu en attendant que l'hotel nous transmette les bonnes informations -->
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h2 class="display-4 mb-4 gold">Presse</h2>
+        <p>
+          Retrouvez les derniers articles et reportages consacrés à l'Hôtel
+          Chambord dans la presse nationale et internationale.
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img
+                src="images/press/press1.webp"
+                class="card-img-top"
+                alt="Article de presse sur l'Hotel Chambord, photo de l'hotel
+                avec le titre 'Luxe et raffinement au coeur de Paris'"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Luxe et raffinement au coeur de Paris</h5>
+                <p class="card-text">
+                  Découvrez l'histoire et les coulisses de l'Hôtel Chambord dans
+                  ce reportage exclusif.
+                </p>
+                <a href="https://www.forbes.fr/luxe/un-reve-eveille-au-shangri-la-hotel-paris/" class="btn btn-outline-dark">Lire l'article</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img
+                src="images/press/press2.webp"
+                class="card-img-top"
+                alt="Article de presse sur l'Hotel Chambord, photo de la
+                façade de l'hotel avec le titre 'Un havre de paix en plein coeur
+                de Paris'"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un havre de paix en plein coeur de Paris</h5>
+                <p class="card-text">
+                  Plongez dans l'univers de l'Hôtel Chambord et découvrez ses
+                  chambres et suites d'exception.
+                </p>
+                <a href="https://www.forbes.fr/luxe/un-reve-eveille-au-shangri-la-hotel-paris/" class="btn btn-outline-dark">Lire l'article</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img
+                src="images/press/press3.webp"
+                class="card-img-top"
+                alt="Article de presse sur l'Hotel Chambord, photo de la
+                réception de l'hotel avec le titre 'Un accueil d'exception au
+                coeur de Paris'"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un accueil d'exception au coeur de Paris</h5>
+                <p class="card-text">
+                  Découvrez les services et prestations haut de gamme proposés
+                  par l'Hôtel Chambord à ses clients.
+                </p>
+                <a href="https://www.forbes.fr/luxe/un-reve-eveille-au-shangri-la-hotel-paris/" class="btn btn-outline-dark">Lire l'article</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img
+                src="images/press/press4.webp"
+                class="card-img-top"
+                alt="Article de presse sur l'Hotel Chambord, photo de la
+                terrasse de l'hotel avec le titre 'Un havre de paix en plein
+                coeur de Paris'"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un havre de paix en plein coeur de Paris</h5>
+                <p class="card-text">
+                  Plongez dans l'univers de l'Hôtel Chambord et découvrez ses
+                  chambres et suites d'exception.
+                </p>
+                <a href="https://www.forbes.fr/luxe/un-reve-eveille-au-shangri-la-hotel-paris/" class="btn btn-outline-dark">Lire l'article</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <!-- ? Section PRESSE end -->
+
+    <!--! Sidebar menu -->
+    <nav id="sidebar-menu">
+      <ul>
+          <li><a href="#qui-sommes-nous" class="active">Qui sommes-nous</a></li>
+          <li><a href="#acces">Accès</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#carriere">Carrière</a></li>
+          <li><a href="#evenement">Événements</a></li>
+          <li><a href="#presse">Presse</a></li>
+      </ul>
+    </nav>
+    <!--? Sidebar menu end -->
+    
+    <!--? main end -->
+     <!-- ////////// -->
+
+    <!--! footer Begins -->
+     <!-- footer Begins -->
+     <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Hotel Chambord</h5>
+            <p>1 Avenue Montaigne<br />75008 Paris, France</p>
+            <p>
+              Tél : +33 (0)1 23 45 67 89<br />Email : contact@hotelchambord.com
+            </p>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Liens rapides</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white">Accueil</a>
+              </li>
+              <li>
+                <a href="chambre.html" class="text-white">Chambres & Suites</a>
+              </li>
+              <li>
+                <a href="restaurant.html" class="text-white">Restaurant</a>
+              </li>
+              <li>
+                <a href="spa.html" class="text-white">Spa & Bien-être</a>
+              </li>
+              <li>
+                <a href="reservation.html" class="text-white">Réservations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Informations</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="hotel.html#qui-sommes-nous" class="text-white"
+                  >Qui sommes-nous ?</a
+                >
+              </li>
+              <li>
+                <a href="hotel.html#carriere" class="text-white">Carrières</a>
+              </li>
+              <li>
+                <a href="hotel.html#presse" class="text-white">Presse</a>
+              </li>
+              <li><a href="#" class="text-white">Conditions générales</a></li>
+              <li>
+                <a href="#" class="text-white">Politique de confidentialité</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-uppercase mb-4 footer-h5">Suivez-nous</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Votre email"
+                  aria-label="Votre email"
+                  aria-describedby="button-addon2"
+                />
+
+                <button
+                  class="btn btn-outline-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  S'abonner à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2024 Hotel Chambord. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Mentions légales</a>
+              </li>
+              <li class="list-inline-item">·</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Plan du site</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+    <!--? footer end -->
+
+    <!--* CDN JAVAVSCRIPT -->
+    <script src="script/script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script>
+      // active class sur scroll
+      document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('section[id]');
+        const menuItems = document.querySelectorAll('#sidebar-menu a');
+
+        function onScroll() {
+          let scrollPosition = window.pageYOffset;
+
+        sections.forEach(section => {
+        if (scrollPosition >= section.offsetTop - 50 && 
+          scrollPosition < (section.offsetTop + section.offsetHeight - 50)) {
+            menuItems.forEach(item => {
+              item.classList.remove('active');
+              if (item.getAttribute('href').substring(1) === section.getAttribute('id')) {
+                item.classList.add('active');
+              }
+            });
+        }
+      });
+      }
+      window.addEventListener('scroll', onScroll);
+      });
+    </script>
+  </body>
+</html>

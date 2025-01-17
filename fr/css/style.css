@@ -1,0 +1,409 @@
+/*! définition de variables pour le style global du site*/
+:root {
+  /* color palette */
+  --blue: #0c2461;
+  --gold: #d4af37;
+  --white: #f9f7f5;
+  --grey: #303030;
+  /* font family */
+  --maintitle: "Girassol", serif;
+  --subtitle: "Libre Caslon Display", serif;
+  --text: "Roboto", serif;
+
+  /* animation */
+  --animate-duration: 2s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+
+/* Header START */
+/* FONT & COLORS CSS */
+.logo {
+  font-family: var(--maintitle);
+  color: var(--grey);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgb(177, 177, 177);
+  font-size: 25px;
+}
+.subtitle {
+  font-family: var(--maintitle);
+  font-size: 30px;
+  text-shadow: 2px 1px 4px var(--grey);
+}
+.carousel-caption {
+  font-family: var(--subtitle);
+  text-shadow: 2px 2px 4px var(--grey);
+}
+.navbar {
+  background-color: var(--white);
+  font-family: var(--text);
+  font-weight: 600;
+}
+
+.navbar .nav-link {
+  color: var(--grey);
+}
+
+.navbar .nav-link.active {
+  color: var(--gold);
+}
+
+.navbar .dropdown-menu .nav-link {
+  color: var(--white);
+}
+
+.navbar .nav-link:hover {
+  color: var(--gold);
+}
+
+.navbar .dropdown-menu {
+  background-color: var(--grey);
+  font-weight: 600;
+}
+
+.navbar .dropdown-item {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.navbar .dropdown-item:hover {
+  color: var(--grey);
+  background-color: var(--white);
+}
+
+.navbar-toggler {
+  border-color: var(--white);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(249, 247, 245, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar .form-control {
+  background-color: var(--white);
+  border-color: var(--grey);
+  color: var(--grey);
+}
+
+.navbar .btn-outline-success {
+  color: var(--grey);
+  border-color: var(--grey);
+}
+
+.navbar .btn-outline-success:hover {
+  color: var(--white);
+  background-color: var(--grey);
+}
+
+.navbar .btn-outline-primary {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.navbar .btn-outline-primary:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}
+/* language selector */
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+.language-selector img {
+  border: 1px solid #ddd;
+}
+
+.language-selector .btn-link:focus {
+  box-shadow: none;
+}
+/* End of header CSS */
+
+/*! Floating reserver boutton */
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--gold);
+  color: var(--blue);
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+#reservationButton {
+  transition: transform 0.3s ease-in-out;
+}
+.floating-button:hover {
+  background-color: var(--blue);
+  color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.floating-button i {
+  margin-right: 8px;
+}
+/*! Scroll Up button arrow */
+.scroll-to-top-btn {
+  position: fixed; /* Fixed/sticky position */
+  right: 20px; /* Placer 20px de la droite */
+  top: 50%; /* Placer 50% du haut */
+  transform: translateY(
+    -50%
+  ); /* Centrer verticalement pour centrer le bouton */
+  background-color: rgba(0, 0, 0, 0.5); /* couleur de fond */
+  color: white;
+  border: none;
+  border-radius: 50%; /* forme du bouton rond */
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Masquer le bouton par défaut */
+  z-index: 1000; /* Placez le bouton au-dessus de tout */
+  transition: background-color 0.3s, opacity 0.3s; /* Ajoutez une transition pour une expérience utilisateur plus douce */
+}
+
+.scroll-to-top-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroll-to-top-btn.show {
+  display: block; /* Afficher le bouton */
+}
+/*! sidebar menu */
+#sidebar-menu {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 1000;
+}
+
+#sidebar-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+#sidebar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+#sidebar-menu a:hover,
+#sidebar-menu a.active {
+  color: #ffd700; /* Or any color you prefer */
+}
+/*! Footer */
+footer {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: small;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+footer .btn-outline-light:hover {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--blue);
+}
+
+footer hr {
+  border-color: var(--gold);
+}
+.footer-h5 {
+  font-size: medium;
+}
+footer p {
+  font-size: small;
+}
+
+/* CSS ACCEUIL SECTION 1 
+
+.hotel-features {
+  background-color: var(--white);
+  color: var(--white);
+}
+.hotel-features .card {
+  background-color: var(--white);
+  color: var(--grey);
+}
+.hotel-features .btn-primary {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  color: var(--white);
+}
+.hotel-features .btn-primary:hover {
+  background-color: var(--gold);
+  border: 2px solid var(--gold);
+  color: var(--grey);
+}
+.sub {
+  font-family: var(--maintitle);
+  font-size: 25px;
+}
+.caption {
+  font-family: var(--subtitle);
+}
+/* floating effet scroll  */
+
+/*.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+END CSS ACCEUIL SECTION 1 */
+
+/* START CSS ABOUT PAGE 
+h1,
+.display-4 {
+  font-family: var(--maintitle);
+  color: var(--blue);
+}
+
+h2 {
+  font-family: var(--subtitle);
+  color: var(--gold);
+}
+
+.card {
+  border-color: var(--gold);
+}
+
+.card-title {
+  color: var(--blue);
+}
+*/
+/* animation card fade in  */
+/*@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+*/

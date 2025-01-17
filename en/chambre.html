@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms</title>
+    <meta name="author" content="Mélisande Cornet" />
+    <meta
+      name="description"
+      content="Page listant toutes les gammes de chammbres"
+    />
+    <!-- fichier css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages/chambre.css" />
+    <!-- Google Font CDN pour les fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Girassol&family=Libre+Caslon+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/29e60fcc8f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header begins -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <!-- LOGO START -->
+            <!-- H1 - hotel name + 5 star icons -->
+            <h1 class="logo">Hotel Chambord</h1>
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+            </div>
+          </a>
+          <!-- LOGO END -->
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <!-- Rooms -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Rooms</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="chambre.html"
+                      >View All Rooms</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#classique"
+                      >Classic</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#confort"
+                      >Comfort</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#deluxe"
+                      >Deluxe</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#suite">Suite</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Restaurant -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Restaurant</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="restaurant.html"
+                      >Discover Our Restaurant</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-brasserie"
+                      >Brasserie Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-degustation"
+                      >Tasting Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-restaurant"
+                      >Restaurant Menu</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Spa -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Spa</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="spa.html"
+                      >The Spa and Our Treatments</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-detente"
+                      >Relaxation Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-decouverte"
+                      >Discovery Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-relaxant"
+                      >Relaxing Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-plaisir"
+                      >Pleasure Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-evasion"
+                      >Escape Treatment</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Reservation -->
+              <li class="nav-item">
+                <a class="nav-link" href="reservation.html" target="_blank"
+                  >Reservation</a
+                >
+              </li>
+              <!-- Reviews -->
+              <li class="nav-item">
+                <a class="nav-link" href="avis.html">Reviews</a>
+              </li>
+              <!-- Hotel -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >The Hotel</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="hotel.html" target="_blank"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#acces">Access</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#contact"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#carriere"
+                      >Careers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#evenement"
+                      >Events</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#presse">Press</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="actualités.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hotel.html#contact">Contact</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex me-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-sucess"
+                type="submit"
+                title="Search"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div>
+              <a
+                href="panier.html#modal-content"
+                class="btn btn-outline-sucess"
+              >
+                <i class="fa fa-shopping-cart"></i>Cart
+              </a>
+            </div>
+            <div class="language-selector ms-2">
+              <a href="#" class="btn btn-link p-0 me-2" id="fr-lang">
+                <img src="images/france.webp" alt="Français" />
+              </a>
+              <a href="#" class="btn btn-link p-0" id="en-lang">
+                <img src="images/united-kingdom.webp" alt="English" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+    <!-- boutton flottant réserver -->
+    <button id="reservationButton" class="floating-button">
+      <i class="fas fa-calendar-alt"></i> Book
+    </button> 
+    <!-- boutton scroll up -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="scrollup">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- boutton scroll up end -->
+     <!--! MAIN -->
+    <main class="container-fluid">
+      <!--! carousel avec titre au centre  -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide full-width"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+            src="images/chambre/carousel-chambre1.webp"
+            class="d-block w-100"
+            alt="Chambre de l'Hôtel Chambord"
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Our Rooms</h1>
+                <h5>Classic Room</h5>
+                <p class="sub">
+                An intimate room with a canopy bed, waxed parquet, and a marble
+                bathroom. Starting from €350 per night.
+                </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/chambre/carousel-chambre2.webp"
+              class="d-block w-100"
+              alt="Chambre de l'Hôtel Chambord"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 >Our Rooms</h1>
+                <h5>Comfort Room</h5>
+                <p class="sub">
+                A warm ambiance with marble touches and an elegant view. Starting from €450 per night.
+                </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/chambre/carousel-chambre3.webp"
+              class="d-block w-100"
+              alt="Chambre de l'Hôtel Chambord"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1 >Our Rooms</h1>
+                <h5>Deluxe Room</h5>
+                <p class="sub">
+                A warm ambiance with marble touches and an elegant view. Starting from €700 per night. 
+                </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev" 
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span> 
+        </button>
+      </div>
+      <!--! section intro -->
+      <section class="container py-5">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/chambre/intro-chambre.webp" alt="Chambre de l'Hôtel Chambord" class="img-fluid mb-3">
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <h2 class="sub text-center mb-4">A Journey into Royal Elegance</h2>
+            <hr>
+            <p class="sub">
+              The rooms at Hotel Chambord embody the soul of grand French châteaux, offering a perfect blend of historical refinement and modern comfort. Each category – from the charming Classic Rooms to the sumptuous Suites – is designed to immerse our guests in a world of majesty and elegance.
+            </p>
+            <p class="sub">
+              With floral wallpapers, canopy beds draped in luxurious fabrics, waxed parquet floors, and period furniture, every detail evokes the splendor of royal residences. No matter which type of room you choose, you will be transported to an authentic and enchanting setting where comfort meets a decor worthy of the finest pages of French history.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--! Section - chambre classique -->
+      <section class="chambre classique" id="classique">
+      <h2>Classic Room</h2>
+      <p> Our Classic Rooms embody the essence of French charm, ideal for an intimate stay in a refined setting. The walls are adorned with floral wallpapers reminiscent of the grand châteaux salons, while the period furniture, consisting of delicately carved wooden desks and tufted armchairs, invites serenity. The waxed parquet reflects the soft light of a crystal chandelier, and the canopy bed draped in noble fabrics ensures absolute comfort. These rooms offer a royal experience, perfect for immersing oneself in the timeless ambiance of Château de Chambord. </p>
+      <div class="d-flex flex-wrap gap-3" id="card-container">
+        <!-- Card 1 -->
+        <div class="card" id="card"> 
+            <div class="carousel">
+              <div class="carousel-inner">
+              <img src="images/chambre/chambre_classique.webp" alt="Photo de la chambre classique" class="active">
+              <img src="images/chambre/chambre_classique2.webp" alt="Photo de la chambre classique 2">
+              <img src="images/chambre/chambre_classique3.webp" alt="Photo de la chambre classique 3">
+              </div>
+              <div class="carousel-indicators">
+              <span class="indicator active" data-index="0"></span>
+              <span class="indicator" data-index="1"></span>
+              <span class="indicator" data-index="2"></span>
+              </div>
+            </div>
+          <div class="card-body">
+            <h5 class="card-title">Classic Room</h5>
+            <p class="card-text"> An intimate room with a canopy bed, waxed parquet, and a marble bathroom.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Wooden bathroom</li>
+            <li class="list-group-item">Waxed parquet</li>
+            <li class="list-group-item">Canopy bed</li>
+          </ul>
+          <div class="card-body">
+            <p>From 350€ per night</p>
+            <button type="button">Book</button>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card" id="card"> 
+          <img src="images/chambre/chambre_classique2.webp" alt="Photo de la chambre classique" />
+            <div class="card-body">
+              <h5 class="card-title">Classic Room</h5>
+                <p class="card-text">Period furniture and a refined ambiance for an intimate stay.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Period furniture</li>
+                <li class="list-group-item">Crystal chandelier</li>
+                <li class="list-group-item">Floral decoration</li>
+            </ul>
+            <div class="card-body">
+              <p>From 350€ per night</p>
+              <button>Book</button>
+            </div>
+          </div>
+        
+        <!-- Card 3 -->
+        <div class="card" id="card"> 
+          <img src="images/chambre/chambre_classique0.webp" alt="Photo de la chambre classique" />
+            <div class="card-body">
+              <h5 class="card-title">Classic Room</h5>
+                <p class="card-text">An elegant room to immerse yourself in the ambiance of French châteaux.
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tufted armchairs</li>
+                <li class="list-group-item">Crystal chandelier</li>
+                <li class="list-group-item">Warm ambiance</li>
+            </ul>
+            <div class="card-body">
+              <p>From 350€ per night</p>
+              <button>Book</button>
+            </div>
+          </div>
+  
+      </div>
+      </section>
+      <!--! Section - chambre confort -->
+      <section class="chambre confort" id="confort">
+        <h2>Comfort Room</h2>
+        <p>The Comfort Rooms offer a warm and elegant ambiance, ideal for travelers seeking sophistication. Their refined decor blends soft colors and floral patterns inherited from the most beautiful French châteaux. The canopy beds draped in luxurious curtains invite a night worthy of nobility, while the wooden desks and brass lamps add a touch of authenticity. Marble touches in the bathroom and views of elegant Paris complete the atmosphere of discreet refinement.
+        </p>
+        <div class="d-flex flex-wrap gap-3" id="card-container">
+        <!-- Card 1 -->
+        <div class="card" id="card"> 
+          <img src="images/chambre/chambre_confort.webp" alt="Photo de la chambre confort" />
+          <div class="card-body">
+              <h5 class="card-title">Comfort Room</h5>
+                <p class="card-text">A warm ambiance with marble touches and an elegant view.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Marble bathroom</li>
+              <li class="list-group-item">View of Paris</li>
+              <li class="list-group-item">Canopy bed</li>
+            </ul>
+            <div class="card-body">
+              <p>From €450 per night</p>
+              <button>Book</button>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card" id="card"> 
+          <img src="images/chambre/chambre_confort1.webp" alt="Photo de la chambre confort" />
+          <div class="card-body">
+              <h5 class="card-title">Comfort Room</h5>
+              <p class="card-text"> A warm ambiance with marble touches and an elegant view.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Marble bathroom</li>
+            <li class="list-group-item">View of Paris</li>
+            <li class="list-group-item">Canopy bed</li>
+          </ul>
+          <div class="card-body">
+            <p>From €450 per night</p>
+            <button>Book</button>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card" id="card"> 
+          <img src="images/chambre/chambre_confort2.webp" alt="Photo de la chambre confort" />
+          <div class="card-body">
+              <h5 class="card-title">Comfort Room</h5>
+              <p class="card-text">A warm ambiance with marble touches and an elegant view.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Marble bathroom</li>
+            <li class="list-group-item">View of Paris</li>
+            <li class="list-group-item">Canopy bed</li>
+          </ul>
+          <div class="card-body">
+            <p>From €450 per night</p>
+            <button>Book</button>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!--! Section - chambre deluxe -->
+      <section class="chambre deluxe" id="deluxe">
+        <h2>Deluxe Room</h2>
+        <p>Our Deluxe Rooms are a true homage to the royal art of living. Every detail has been designed to offer an unforgettable experience: imposing chandeliers, floral tapestries, and marble statues that evoke the opulence of the grand reception halls of the great châteaux. The canopy bed, adorned with sumptuous draperies, is an invitation to princely rest. The waxed parquet and carved wooden furniture, combined with a luxurious bathroom, make every moment spent in these rooms exceptional. Spacious and bathed in light, they embody French luxury.
+        </p>
+        <div class="d-flex flex-wrap gap-3" id="card-container">
+          <!-- Card 1 -->
+          <div class="card" id="card"> 
+            <img src="images/chambre/chambre_deluxe.webp" alt="Photo de la chambre deluxe" />
+            <div class="card-body">
+                <h5 class="card-title">Deluxe Room</h5>
+                <p class="card-text">A warm ambiance with marble touches and an elegant view.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Marble bathroom</li>
+                <li class="list-group-item">View of Paris</li>
+                <li class="list-group-item">Canopy bed</li>
+              </ul>
+              <div class="card-body">
+                <p>From 1200€ per night</p>
+                <button>Book</button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card" id="card"> 
+            <img src="images/chambre/chambre_deluxe1.webp" alt="Photo de la chambre deluxe" />
+            <div class="card-body">
+              <h5 class="card-title">Deluxe Room</h5>
+              <p class="card-text">A warm ambiance with marble touches and an elegant view.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Marble bathroom</li>
+              <li class="list-group-item">View of Paris</li>
+              <li class="list-group-item">Canopy bed</li>
+            </ul>
+            <div class="card-body">
+              <p>From 1200€ per night</p>
+              <button>Book</button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card" id="card"> 
+            <img src="images/chambre/chambre_deluxe2.webp" alt="Photo de la chambre deluxe" />
+            <div class="card-body">
+              <h5 class="card-title">Deluxe Room</h5>
+              <p class="card-text">A warm ambiance with marble touches and an elegant view.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Marble bathroom</li>
+              <li class="list-group-item">View of Paris</li>
+              <li class="list-group-item">Canopy bed</li>
+            </ul>
+            <div class="card-body">
+              <p>From 1200€ per night</p>
+              <button>Book</button>
+            </div>
+          </div>
+          </div>
+      </section>
+      <!--! Section - chambre suite -->
+      <section class="chambre suite" id="suite">
+        <h2>Our Suites</h2>
+        <p>Our Suites, true jewels of the Hotel Chambord, offer a complete immersion into the royal universe of the Château de Chambord. These sumptuous spaces, decorated with unparalleled care, blend floral wall frescoes, antique furniture, and architectural details inspired by the grand salons of the Renaissance. The private lounge is adorned with solid wood furniture, marble statues, and embroidered curtains. The master bedroom, dominated by a majestic canopy bed, is a sanctuary of luxury. The marble bathrooms, equipped with deep bathtubs and sculpted basins, add an extra touch of splendor. The Suites are designed for guests who wish to experience royal living in the heart of Paris.
+        </p>
+        <div class="d-flex flex-wrap gap-3" id="card-container">
+          <!-- Card 1 -->
+          <div class="card" id="card"> 
+            <img src="images/chambre/suite1.webp" alt="Photo de la suite" />
+            <div class="card-body">
+                <h5 class="card-title">Suite Royale</h5>
+                <p class="card-text"> Grande suite rose avec une colonne et une vue élégante sur les jardins de l'hotel.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Salle de bain en marbre</li>
+                <li class="list-group-item">Grand balcon sur jardin</li>
+                <li class="list-group-item">Lit à baldaquin</li>
+              </ul>
+              <div class="card-body">
+                <p>À partir de 6000€ par nuit</p>
+                <button>Réserver</button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card" id="card"> 
+            <img src="images/chambre/suite2.webp" alt="Photo de la suite" />
+            <div class="card-body">
+                <h5 class="card-title">Suite Présidentielle</h5>
+                <p class="card-text"> Une ambiance chaleureuse avec des touches de marbre et une vue élégante.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Balcon en marbre/li>
+                <li class="list-group-item">Moulure et tapis d'époque</li>
+                <li class="list-group-item">Lustre venitien</li>
+              </ul>
+              <div class="card-body">
+                <p>À partir de 8600€ par nuit</p>
+                <button>Réserver</button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card" id="card"> 
+            <img src="images/chambre/suite3.webp" alt="Photo de la suite" />
+            <div class="card-body">
+                <h5 class="card-title">Junior Suite</h5>
+                <p class="card-text"> Le summum du luxe et de l’élégance pour un séjour inoubliable</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Salon séparé</li>
+                <li class="list-group-item">Vue sur Paris</li>
+                <li class="list-group-item">Vue sur la Tour Eiffel</li>
+              </ul>
+              <div class="card-body">
+                <p>À partir de 11800€ par nuit</p>
+                <button>Réserver</button>
+            </div>
+          </div>
+
+      </section>
+      
+    </main>
+    <!-- Modale de réservation -->
+  <div class="modal-right" id="reservationModal">
+    <div class="modal-header">
+      <i class="fas fa-hotel"></i>
+      <h3>Réservez une chambre</h3>
+      <button class="close-btn" onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="room-selector">
+        <div class="d-flex justify-content-between align-items-center">
+          <span>1 adulte, 1 chambre</span>
+          <button class="btn btn-link" onclick="toggleRoomModifier()">Modifier</button>
+        </div>
+        <div class="room-modifier" id="roomModifier">
+          <h4>Chambre 1</h4>
+          <div class="counter-group">
+            <span>Adultes (13 ans ou plus)</span>
+            <div class="counter-controls">
+              <button class="counter-btn" onclick="updateCount('adults', -1)">-</button>
+              <span id="adultsCount">1</span>
+              <button class="counter-btn" onclick="updateCount('adults', 1)">+</button>
+            </div>
+          </div>
+          <div class="counter-group">
+            <span>Enfants</span>
+            <div class="counter-controls">
+              <button class="counter-btn" onclick="updateCount('children', -1)">-</button>
+              <span id="childrenCount">0</span>
+              <button class="counter-btn" onclick="updateCount('children', 1)">+</button>
+            </div>
+          </div>
+          <button class="btn btn-link" onclick="addRoom()">+ Ajouter une autre chambre</button>
+        </div>
+      </div>
+
+      <div class="calendar">
+        <h4>Janvier 2025</h4>
+        <div class="calendar-grid" id="calendar"></div>
+      </div>
+
+      <button class="confirm-btn" id="confirmBtn">Confirmer votre sélection</button>
+    </div>
+  </div>
+    <!-- footer Begins -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Hotel Chambord</h5>
+            <p>1 Avenue Montaigne<br />75008 Paris, France</p>
+            <p>
+              Tél : +33 (0)1 23 45 67 89<br />Email : contact@hotelchambord.com
+            </p>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Liens rapides</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white">Accueil</a>
+              </li>
+              <li>
+                <a href="chambre.html" class="text-white">Chambres & Suites</a>
+              </li>
+              <li>
+                <a href="restaurant.html" class="text-white">Restaurant</a>
+              </li>
+              <li>
+                <a href="spa.html" class="text-white">Spa & Bien-être</a>
+              </li>
+              <li>
+                <a href="reservation.html" class="text-white">Réservations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Informations</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="hotel.html#qui-sommes-nous" class="text-white"
+                  >Qui sommes-nous ?</a
+                >
+              </li>
+              <li>
+                <a href="hotel.html#carriere" class="text-white">Carrières</a>
+              </li>
+              <li>
+                <a href="hotel.html#presse" class="text-white">Presse</a>
+              </li>
+              <li><a href="#" class="text-white">Conditions générales</a></li>
+              <li>
+                <a href="#" class="text-white">Politique de confidentialité</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-uppercase mb-4 footer-h5">Suivez-nous</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Votre email"
+                  aria-label="Votre email"
+                  aria-describedby="button-addon2"
+                />
+
+                <button
+                  class="btn btn-outline-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  S'abonner à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2024 Hotel Chambord. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Mentions légales</a>
+              </li>
+              <li class="list-inline-item">·</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Plan du site</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+        <!-- Bootstrap Js cdn -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+      <script src="script/script2.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const carousel = document.querySelector('.carousel');
+          const inner = carousel.querySelector('.carousel-inner');
+          const indicators = carousel.querySelectorAll('.indicator');
+      
+          indicators.forEach(indicator => {
+        indicator.addEventListener('click', () => {
+          const index = indicator.dataset.index;
+          inner.style.transform = `translateX(-${index * 100}%)`;
+      
+          indicators.forEach(ind => ind.classList.remove('active'));
+          indicator.classList.add('active');
+        });
+          });
+        });
+
+        // Fonctions pour la modale
+        function openModal() {
+          document.getElementById('reservationModal').classList.add('show');
+        }
+        
+        function closeModal() {
+          document.getElementById('reservationModal').classList.remove('show');
+        }
+        
+        function toggleRoomModifier() {
+          document.getElementById('roomModifier').classList.toggle('show');
+        }
+        
+        function updateCount(type, change) {
+          const countElement = document.getElementById(`${type}Count`);
+          let count = parseInt(countElement.textContent);
+          if (type === 'adults') {
+        count = Math.max(1, Math.min(4, count + change));
+          } else {
+        count = Math.max(0, Math.min(4, count + change));
+          }
+          countElement.textContent = count;
+          updateRoomSummary();
+        }
+        
+        function updateRoomSummary() {
+          const adults = document.getElementById('adultsCount').textContent;
+          const children = document.getElementById('childrenCount').textContent;
+          const summary = `${adults} adulte${adults > 1 ? 's' : ''}, ${children} enfant${children > 1 ? 's' : ''}, 1 chambre`;
+          document.querySelector('.room-selector > div > span').textContent = summary;
+        }
+        
+        // Initialisation du calendrier
+        function initCalendar() {
+          const calendar = document.getElementById('calendar');
+          const basePrice = 350; // Prix de base
+          const today = new Date(2025, 0, 1); // Janvier 2025
+        
+          for (let i = 1; i <= 31; i++) {
+        const day = document.createElement('div');
+        day.className = 'calendar-day';
+        if (i < 16) {
+          day.className += ' disabled';
+        }
+        
+        const date = new Date(2025, 0, i);
+        const isWeekend = date.getDay() === 0 || date.getDay() === 6;
+        const price = isWeekend ? basePrice * 1.25 : basePrice;
+        
+        day.innerHTML = `
+          ${i}
+          <div class="price">${price}€</div>
+        `;
+        
+        if (!day.classList.contains('disabled')) {
+          day.onclick = () => selectDate(day);
+        }
+        
+        calendar.appendChild(day);
+          }
+        }
+        
+        let selectedDates = [];
+        function selectDate(dayElement) {
+          if (selectedDates.length === 2) {
+        selectedDates = [];
+        document.querySelectorAll('.calendar-day').forEach(day => {
+          day.classList.remove('selected');
+        });
+          }
+        
+          dayElement.classList.add('selected');
+          selectedDates.push(dayElement);
+        
+          if (selectedDates.length === 2) {
+        document.getElementById('confirmBtn').classList.add('show');
+          }
+        }
+        
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', () => {
+          initCalendar();
+          
+          // Ajouter les événements click aux boutons de réservation
+          document.querySelectorAll('button').forEach(button => {
+        if (button.textContent.trim() === 'Réserver') {
+          button.onclick = openModal;
+        }
+          });
+        });
+      </script>
+  </body>
+</html>

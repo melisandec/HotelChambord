@@ -1,0 +1,175 @@
+/*! définition de variables pour le style global du site*/
+:root {
+  --blue: #0c2461;
+  --gold: #d4af37;
+  --white: #f9f7f5;
+  --grey: #303030;
+  --light-grey: #e0e0e0;
+
+  --maintitle: "Girassol", serif;
+  --subtitle: "Libre Caslon Display", serif;
+  --text: "Roboto", sans-serif;
+
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: var(--text);
+  color: var(--grey);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--subtitle);
+  color: var(--grey);
+  text-shadow: 0.5px 0 0 currentColor; /* Creates a slightly bolder effect */
+}
+.lead {
+  font-family: var(--subtitle);
+}
+.accent {
+  color: var(--blue);
+}
+
+.accent-gold {
+  color: var(--gold);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+section button.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--gold);
+  color: var(--grey);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: var(--transition);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--gold);
+}
+
+section button.btn:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.55);
+  border: 3px solid var(--blue);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+th {
+  font-weight: bold;
+  background-color: var(--light-grey);
+}
+
+.parallax {
+  background-image: url("../../images/press/press1.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+}
+.parallax-content p {
+  font-family: var(--subtitle);
+}
+/* RESPONSIVE - ADJUSTMENT*/
+/* media queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+}
+
+.testimonial-author {
+  font-family: var(--text);
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: left;
+  margin-left: 10px;
+}
+#temoignages h2 {
+  margin-bottom: 2rem;
+}
+.testimonial-text {
+  font-style: italic;
+}
+
+#reservation-modal .modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#reservation-modal .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Lorsque l'écran est de taille inférieure ou égale à 768px, la modal prend toute la largeur de l'écran */
+@media (max-width: 768px) {
+  .modal {
+    width: 100%;
+  }
+}

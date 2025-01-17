@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Chambord - Actualités</title>
+    <meta name="author" content="Mélisande Cornet" />
+    <meta name="description" content="Site vitrine de l'Hotel Chambord" />
+    <link rel="icon" type="image/x-icon" href="images/logo.webp" />
+    <!-- fichier css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages/actualitéNew.css" />
+    <!-- Google Font CDN pour les fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Libre+Caslon+Display&family=Roboto:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/29e60fcc8f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- debut header -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <!-- LOGO START -->
+            <!-- H1 - nom hotel + 5 icones avec étoiles-->
+            <h1 class="logo">Hotel Chambord</h1>
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+            </div>
+          </a>
+          <!-- LOGO END -->
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <!-- Acceuil -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Acceuil</a
+                >
+              </li>
+              <!-- Chambre -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Chambre</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="chambre.html"
+                      >Voir toutes les gammes</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#classique"
+                      >Classique</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#confort"
+                      >Confort</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#deluxe"
+                      >Deluxe</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#suite">Suite</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Restaurant -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Restaurant</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="restaurant.html"
+                      >Découvrez notre restaurant</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-brasserie"
+                      >Carte Brasserie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-degustation"
+                      >Carte Dégustation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-restaurant"
+                      >Carte Restaurant</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Spa -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Le Spa</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="spa.html"
+                      >Le Spa et nos Soins</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-detente"
+                      >Soin Détente</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-decouverte"
+                      >Soin Découverte</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-relaxant"
+                      >Soin Relaxant</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-plaisir"
+                      >Soin Plaisir</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-evasion"
+                      >Soin Evasion</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Reservation -->
+              <li class="nav-item">
+                <a class="nav-link" href="reservation.html" target="_blank"
+                  >Réservation</a
+                >
+              </li>
+              <!-- Avis -->
+              <li class="nav-item">
+                <a class="nav-link" href="avis.html">Avis</a>
+              </li>
+              <!-- Hotel -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >L'hôtel</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="hotel.html" target="_blank"
+                      >Qui sommes-nous?</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#acces">Accès</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#contact"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#carriere"
+                      >Recrutement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#evenement"
+                      >Evénement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#presse">Presse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="actualités.html">Actualités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hotel.html#contact">Contact</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex me-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Rechercher"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-sucess"
+                type="submit"
+                title="Rechercher"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div>
+              <a
+                href="panier.html#modal-content"
+                class="btn btn-outline-sucess"
+              >
+                <i class="fa fa-shopping-cart"></i>Panier
+              </a>
+            </div>
+            <div class="language-selector ms-2">
+              <a href="#" class="btn btn-link p-0 me-2" id="fr-lang">
+                <img src="images/france.webp" alt="Français" />
+              </a>
+              <a href="#" class="btn btn-link p-0" id="en-lang">
+                <img src="images/united-kingdom.webp" alt="English" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- fin header -->
+
+    <!-- debut boutton flottant réserver -->
+    <button id="reservationButton" class="floating-button">
+      <i class="fas fa-calendar-alt"></i> Réserver
+    </button>
+    <!-- fin boutton flottant réserver -->
+    <!-- boutton scroll up -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="scrollup">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- boutton scroll up end -->
+
+    <!-- une page d'actualités sous forme de brèves pour agrémenter le contenu du site et parler du domaine d'activité en général -->
+    <!-- les administrateurs du site pourront publier des articles sur l'actualité de leur domaine d'activité, sur des idées novatrices ou encore sur l'évolution de l'hotel. -->
+    <!-- afin d'améliorer le référencement et leru positionnement. Il serait judicieux de mettre des liens entre les actualités et le site, et vice versa. -->
+    <!-- les actualités peuvent être partagées sur les réseaux sociaux pour augmenter la visibilité du site. -->
+    <!-- les actualités peuvent être classées par catégories pour faciliter la recherche des utilisateurs. -->
+    <!-- les actualités peuvent être commentées par les utilisateurs pour donner leur avis. -->
+    <!-- les actualités peuvent être notées par les utilisateurs pour donner leur avis. -->
+    <section class="blog-header">
+      <div class="container">
+        <h1 class="text-center">Le Journal de l'Hôtel Chambord</h1>
+        <h5 class="text-center">
+          Découvrez l'art de vivre parisien à travers nos dernières actualités
+          et expériences exclusives
+        </h5>
+      </div>
+    </section>
+    <!-- Catégories début -->
+    <section class="container categories">
+      <h2 class="section-title">Catégories</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-1">
+          <a href="#" class="btn btn-outline-primary w-100 mb-2">Tous</a>
+        </div>
+        <div class="col-md-1">
+          <a href="#" class="btn btn-outline-primary w-100 mb-2">Événements</a>
+        </div>
+        <div class="col-md-1">
+          <a href="#" class="btn btn-outline-primary w-100 mb-2">Offres</a>
+        </div>
+        <div class="col-md-1">
+          <a href="#" class="btn btn-outline-primary w-100 mb-2">Nouveautés</a>
+        </div>
+        <div class="col-md-1">
+          <a href="#" class="btn btn-outline-primary w-100 mb-2">Gastronomie</a>
+        </div>
+        <div class="col-md-1">
+          <a href="#" class="btn btn-outline-primary w-100 mb-2">Bien-être</a>
+        </div>
+      </div>
+    </section>
+    <!-- Catégories fin -->
+    <!-- dernier article début -->
+    <section class="container featured-posts">
+      <h2 class="section-title">À la Une</h2>
+      <div class="row justify-content-center">
+        <!-- Dernier article en paysage -->
+        <div class="col-md-11">
+          <div class="card mb-4">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <img
+                  src="images/landscape.webp"
+                  class="img-fluid"
+                  alt="Romantique et magnifique coucher de soleil depuis un balcon avec bouteille de champagne et vue sur la tour Eiffel"
+                />
+              </div>
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Un coucher de soleil parisien inoubliable à l’Hôtel Chambord
+                  </h5>
+                  <p class="card-text">
+                    Vivez un moment magique sur notre balcon panoramique avec
+                    vue imprenable sur la Tour Eiffel.
+                    <span class="more-text" style="display: none">
+                      Chaque soir, nos clients peuvent savourer le spectacle
+                      enchanteur du soleil couchant sur la Ville Lumière,
+                      accompagné d’une coupe de champagne. Cette expérience
+                      romantique exclusive est désormais incluse dans nos suites
+                      Prestige et Royale. Laissez-vous envoûter par les teintes
+                      dorées du ciel parisien, tandis que la Tour Eiffel
+                      s’illumine progressivement. Notre sommelier a sélectionné
+                      un champagne d’exception pour sublimer ce moment unique.
+                      Une occasion parfaite pour une demande en mariage, un
+                      anniversaire ou simplement pour célébrer l’amour dans le
+                      cadre le plus romantique de Paris. Réservez dès maintenant
+                      votre suite et préparez-vous à vivre une expérience
+                      inoubliable au cœur de la capitale française.
+                    </span>
+                  </p>
+                  <a href="#" class="read-more"
+                    ><i class="fas fa-book-open"></i> Lire la suite</a
+                  >
+                  <p class="card-text mt-3">
+                    <small class="text-end d-block"
+                      >Publié il y a 3 minutes</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Deuxième dernier article en carré -->
+      </div>
+    </section>
+    <!-- dernier article fin -->
+
+    <!-- Cards Grid début -->
+    <section class="container recent-posts">
+      <h2 class="section-title">Dernières Actualités</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 m-4 carte-actualites">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/blog/blog2.webp"
+              class="card-img-top"
+              alt="image de la vue sur la tour eiffel d'une chambre deluxe rouge"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Le réveil au Chambord</h5>
+              <p class="card-text">
+                La vue spectaculaire depuis la chambre deluxe red room au lever
+                de soleil.
+                <span class="more-text" style="display: none">
+                  Réveillez-vous avec une vue imprenable sur Paris depuis notre
+                  chambre deluxe red room. Profitez du lever de soleil tout en
+                  savourant un petit-déjeuner gourmet servi directement dans
+                  votre chambre. Une expérience unique qui vous laissera des
+                  souvenirs inoubliables.
+                </span>
+              </p>
+              <a href="#" class="read-more"
+                ><i class="fas fa-book-open"></i> Lire la suite</a
+              >
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                >Publié le 15 janvier 2025</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/blog/blog3.webp"
+              class="card-img-top"
+              alt="Intérieure d'une piece de restaurant avec des chaise rouge et un damien en marbre rouge et blanc au sol"
+            />
+            <div class="card-body">
+              <!-- article sur une collab avec prada pour la déco de la piece restaurant pendant la fashion week -->
+              <h5 class="card-title">Collaboration avec Prada</h5>
+              <p class="card-text">
+                Découvrez notre collaboration exclusive avec Prada pour la
+                décoration de notre restaurant pendant la Fashion Week.
+                <span class="more-text" style="display: none">
+                  À l'occasion de la Fashion Week, l'Hôtel Chambord s'associe à
+                  la maison de couture Prada pour redécorer notre restaurant.
+                  Profitez d'une ambiance unique avec des chaises en velours
+                  rouge et un sol en marbre rouge et blanc, créant une
+                  atmosphère élégante et sophistiquée. Venez vivre une
+                  expérience culinaire inoubliable dans un cadre exceptionnel.
+                </span>
+              </p>
+              <a href="#" class="read-more"
+                ><i class="fas fa-book-open"></i> Lire la suite</a
+              >
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                >Publié le 10 janvier 2025</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/blog/blog4.webp"
+              class="card-img-top"
+              alt="Vue intérieure d'un hall décoré en marbre et violet, avec des colonnes romaines et des statues gréco-romaines"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Décoration du Hall</h5>
+              <p class="card-text">
+                Découvrez la somptueuse décoration de notre hall, ornée de
+                marbre violet et de colonnes romaines, créant une ambiance
+                majestueuse et élégante.
+                <span class="more-text" style="display: none">
+                  Notre hall d'entrée a été récemment rénové pour offrir une
+                  expérience visuelle époustouflante à nos clients. Les colonnes
+                  romaines et les statues gréco-romaines ajoutent une touche
+                  historique et artistique, tandis que le marbre violet apporte
+                  une note de luxe et de sophistication. Venez admirer cette
+                  décoration unique lors de votre prochain séjour à l'Hôtel
+                  Chambord.
+                </span>
+              </p>
+              <a href="#" class="read-more"
+                ><i class="fas fa-book-open"></i> Lire la suite</a
+              >
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                >Publié le 5 janvier 2025</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 m-4 carte-actualites">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/blog/blog5.webp"
+              class="card-img-top"
+              alt="Dégustation de gâteaux lors du Tea Time à l'Hôtel Chambord"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tea Time au Chambord</h5>
+              <p class="card-text">
+                Profitez d'un moment de détente avec notre Tea Time exclusif,
+                accompagné d'une dégustation de gâteaux raffinés.
+                <span class="more-text" style="display: none">
+                  Dégustez une sélection de thés raffinés accompagnés de
+                  pâtisseries exquises, préparées par notre chef pâtissier. Un
+                  moment de détente parfait pour l'après-midi, dans un cadre
+                  élégant et confortable.
+                </span>
+              </p>
+              <a href="#" class="read-more"
+                ><i class="fa fa-book-open"></i> Lire la suite</a
+              >
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                >Publié le 30 décembre 2024</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/blog/blog6.webp"
+              class="card-img-top"
+              alt="Salle spa privé avec piscine et plafond étoilé"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Salle Spa Privé</h5>
+              <p class="card-text">
+                Découvrez notre salle spa privé avec piscine et plafond étoilé,
+                réservée exclusivement pour la suite présidentielle.
+                <span class="more-text" style="display: none">
+                  Profitez d'un moment de détente ultime dans notre salle spa
+                  privé, équipée d'une piscine et d'un plafond étoilé. Cette
+                  expérience luxueuse est réservée aux clients de notre suite
+                  présidentielle, offrant un cadre intime et exclusif pour se
+                  relaxer et se ressourcer.
+                </span>
+              </p>
+              <a href="#" class="read-more"
+                ><i class="fas fa-book-open"></i> Lire la suite</a
+              >
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                >Publié le 25 décembre 2024</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/helico.webp"
+              class="card-img-top"
+              alt="Vue aérienne de Paris depuis un hélicoptère"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Visite en Hélicoptère</h5>
+              <p class="card-text">
+                Découvrez Paris comme jamais auparavant avec notre visite en
+                hélicoptère exclusive.
+                <span class="more-text" style="display: none">
+                  Envolez-vous au-dessus de la Ville Lumière et admirez des vues
+                  à couper le souffle sur les monuments emblématiques tels que
+                  la Tour Eiffel, le Louvre, et Notre-Dame. Cette expérience
+                  unique vous offre une perspective inédite sur la beauté et
+                  l'histoire de Paris. Réservez dès maintenant pour une aventure
+                  inoubliable dans les cieux parisiens.
+                </span>
+              </p>
+              <a href="#" class="read-more"
+                ><i class="fas fa-book-open"></i> Lire la suite</a
+              >
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                >Publié le 20 décembre 2024</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 m-4 carte-actualites">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/wine.webp"
+              class="card-img-top"
+              alt="Visite de la cave à vin et dégustation de vin"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Visite de la Cave à Vin</h5>
+              <p class="card-text">
+                Découvrez notre cave à vin exceptionnelle et profitez d'une
+                dégustation de vins fins sélectionnés par notre sommelier.
+                <span class="more-text" style="display: none">
+                  Plongez dans l'univers de l'œnologie avec une visite guidée de
+                  notre cave à vin. Apprenez les secrets de la vinification et
+                  dégustez une sélection de vins rares et prestigieux. Une
+                  expérience unique pour les amateurs de vin et les épicuriens.
+                </span>
+              </p>
+              <a href="#" class="read-more"
+                ><i class="fas fa-book-open"></i> Lire la suite</a
+              >
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                >Publié le 15 décembre 2024</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/mariage.webp"
+              class="card-img-top"
+              alt="Mariage au Chambord avec lustres vénitiens et décor de château"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mariage au Chambord</h5>
+              <p class="card-text">
+                Célébrez votre mariage dans un cadre somptueux avec des lustres
+                vénitiens et une décoration digne d'un château.
+                <span class="more-text" style="display: none">
+                  L'Hôtel Chambord vous offre un cadre exceptionnel pour votre
+                  mariage, avec des salons magnifiquement décorés, des lustres
+                  vénitiens et des tableaux historiques.
+                </span>
+              </p>
+              <a href="#" class="read-more"
+                ><i class="fas fa-book-open"></i> Lire la suite</a
+              >
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                >Publié le 10 décembre 2024</small
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/blog/cour.webp"
+              class="card-img-top"
+              alt="Terrasse gréco-romaine avec jardin datant de Louis XIV"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Terrasse Gréco-Romaine</h5>
+              <p class="card-text">
+                Découvrez notre magnifique terrasse gréco-romaine avec un jardin
+                historique datant de l'époque de Louis XIV.
+                <span class="more-text" style="display: none">
+                  La terrasse offre une vue imprenable sur notre jardin, qui a
+                  été soigneusement préservé pour refléter le style et
+                  l'élégance de l'époque de Louis XIV. Promenez-vous parmi les
+                  statues et les colonnes gréco-romaines, et profitez de la
+                  tranquillité de ce cadre historique unique. Un lieu parfait
+                  pour se détendre et se ressourcer.
+                </span>
+              </p>
+              <a href="#" class="read-more"
+                ><i class="fas fa-book-open"></i> Lire la suite</a
+              >
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary"
+                >Publié le 10 décembre 2024</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pagination début -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+            >Précédent</a
+          >
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Suivant</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Pagination fin -->
+
+    <!-- footer Begins -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Hotel Chambord</h5>
+            <p>1 Avenue Montaigne<br />75008 Paris, France</p>
+            <p>
+              Tél : +33 (0)1 23 45 67 89<br />Email : contact@hotelchambord.com
+            </p>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Liens rapides</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white">Accueil</a>
+              </li>
+              <li>
+                <a href="chambre.html" class="text-white">Chambres & Suites</a>
+              </li>
+              <li>
+                <a href="restaurant.html" class="text-white">Restaurant</a>
+              </li>
+              <li>
+                <a href="spa.html" class="text-white">Spa & Bien-être</a>
+              </li>
+              <li>
+                <a href="reservation.html" class="text-white">Réservations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Informations</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="hotel.html#qui-sommes-nous" class="text-white"
+                  >Qui sommes-nous ?</a
+                >
+              </li>
+              <li>
+                <a href="hotel.html#carriere" class="text-white">Carrières</a>
+              </li>
+              <li>
+                <a href="hotel.html#presse" class="text-white">Presse</a>
+              </li>
+              <li><a href="#" class="text-white">Conditions générales</a></li>
+              <li>
+                <a href="#" class="text-white">Politique de confidentialité</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-uppercase mb-4 footer-h5">Suivez-nous</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Votre email"
+                  aria-label="Votre email"
+                  aria-describedby="button-addon2"
+                />
+
+                <button
+                  class="btn btn-outline-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  S'abonner à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2024 Hotel Chambord. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Mentions légales</a>
+              </li>
+              <li class="list-inline-item">·</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Plan du site</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+
+    <!-- Bootstrap Js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script2.js"></script>
+    <script>
+      // Sélectionne tous les boutons "Lire la suite" et ajoute un écouteur d'événement pour chaque bouton
+      document.querySelectorAll(".read-more").forEach(function (button) {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          // Sélectionne l'élément de texte supplémentaire associé au bouton
+          const moreText =
+            this.previousElementSibling.querySelector(".more-text");
+          if (moreText.style.display === "none") {
+            moreText.style.display = "inline";
+            this.textContent = "Lire moins";
+          } else {
+            moreText.style.display = "none";
+            this.textContent = "Lire la suite";
+          }
+        });
+      });
+
+      // Ajouter des boutons de partage et de favoris à chaque carte d'article
+      document.querySelectorAll(".card").forEach(function (card) {
+        // Créer le bouton de partage
+        const shareButton = document.createElement("button");
+        shareButton.className = "btn btn-outline-secondary me-2";
+        shareButton.innerHTML = '<i class="fas fa-share-alt"></i> Partager';
+        shareButton.addEventListener("click", function () {
+          alert("Partager cet article");
+        });
+
+        // Créer le bouton de favoris
+        const favoriteButton = document.createElement("button");
+        favoriteButton.className = "btn btn-outline-warning";
+        favoriteButton.innerHTML = '<i class="fas fa-star"></i> Favoris';
+        favoriteButton.addEventListener("click", function () {
+          alert("Ajouter aux favoris");
+        });
+
+        // Sélectionner le pied de carte existant ou en crée un nouveau
+        const cardFooter = card.querySelector(".card-footer");
+        if (cardFooter) {
+          // Ajouter une ligne de séparation et les boutons au pied de carte existant
+          cardFooter.appendChild(document.createElement("br"));
+          cardFooter.appendChild(shareButton);
+          cardFooter.appendChild(favoriteButton);
+        } else {
+          // Créer un nouveau pied de carte et y ajoute les boutons
+          const newFooter = document.createElement("div");
+          newFooter.className = "card-footer";
+
+          newFooter.appendChild(shareButton);
+          newFooter.appendChild(favoriteButton);
+          card.appendChild(newFooter);
+        }
+      });
+    </script>
+  </body>
+</html>

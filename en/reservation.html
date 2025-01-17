@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hôtel Chambord - Réservation</title>
+    <meta name="author" content="Mélisande Cornet" />
+    <meta name="description" content="A propos de l'Hotel Chambord" />
+    <link rel="icon" type="image/x-icon" href="images/logo.webp" />
+
+    <!-- fichier css -->
+    <link rel="stylesheet" href="css/pages/reservation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Font CDN pour les fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Libre+Caslon+Display&family=Roboto:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/29e60fcc8f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <!-- LOGO START -->
+            <!-- H1 - hotel name + 5 star icons -->
+            <h1 class="logo">Hotel Chambord</h1>
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+            </div>
+          </a>
+          <!-- LOGO END -->
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <!-- Home -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <!-- Rooms -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Rooms</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="chambre.html"
+                      >View All Rooms</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#classique"
+                      >Classic</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#confort"
+                      >Comfort</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#deluxe"
+                      >Deluxe</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#suite">Suite</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Restaurant -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Restaurant</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="restaurant.html"
+                      >Discover Our Restaurant</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-brasserie"
+                      >Brasserie Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-degustation"
+                      >Tasting Menu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-restaurant"
+                      >Restaurant Menu</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Spa -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Spa</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="spa.html"
+                      >The Spa and Our Treatments</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-detente"
+                      >Relaxation Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-decouverte"
+                      >Discovery Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-relaxant"
+                      >Relaxing Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-plaisir"
+                      >Pleasure Treatment</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-evasion"
+                      >Escape Treatment</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Reservation -->
+              <li class="nav-item">
+                <a class="nav-link" href="reservation.html" target="_blank"
+                  >Reservation</a
+                >
+              </li>
+              <!-- Reviews -->
+              <li class="nav-item">
+                <a class="nav-link" href="avis.html">Reviews</a>
+              </li>
+              <!-- Hotel -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >The Hotel</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="hotel.html" target="_blank"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#acces">Access</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#contact"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#carriere"
+                      >Careers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#evenement"
+                      >Events</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#presse">Press</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="actualités.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hotel.html#contact">Contact</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex me-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-sucess"
+                type="submit"
+                title="Search"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div>
+              <a
+                href="panier.html#modal-content"
+                class="btn btn-outline-sucess"
+              >
+                <i class="fa fa-shopping-cart"></i>Cart
+              </a>
+            </div>
+            <div class="language-selector ms-2">
+              <a href="#" class="btn btn-link p-0 me-2" id="fr-lang">
+                <img src="images/france.webp" alt="Français" />
+              </a>
+              <a href="#" class="btn btn-link p-0" id="en-lang">
+                <img src="images/united-kingdom.webp" alt="English" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+    <div class="reservation-container">
+      <div class="step-indicator">
+      <div class="step active">
+        <div class="step-number">1</div>
+        <div class="step-title">Travelers</div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-title">Dates</div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-title">Room</div>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-title">Summary</div>
+      </div>
+      </div>
+
+      <!-- Section 1: Travelers -->
+      <div class="reservation-section active" id="step1">
+      <h2 class="mb-4">Number of Travelers</h2>
+      <div class="counter-group">
+        <div>
+        <h5>Adults</h5>
+        <p class="text-muted">13 years and older</p>
+        </div>
+        <div class="counter-controls">
+        <button class="counter-btn" onclick="updateCount('adults', -1)">
+          -
+        </button>
+        <span id="adultsCount">1</span>
+        <button class="counter-btn" onclick="updateCount('adults', 1)">
+          +
+        </button>
+        </div>
+      </div>
+      <div class="counter-group">
+        <div>
+        <h5>Children</h5>
+        <p class="text-muted">0 to 12 years</p>
+        </div>
+        <div class="counter-controls">
+        <button class="counter-btn" onclick="updateCount('children', -1)">
+          -
+        </button>
+        <span id="childrenCount">0</span>
+        <button class="counter-btn" onclick="updateCount('children', 1)">
+          +
+        </button>
+        </div>
+      </div>
+      <div class="navigation-buttons">
+        <button class="btn btn-primary" onclick="nextStep(1)">Next</button>
+      </div>
+      </div>
+
+      <!-- Section 2: Dates -->
+      <div class="reservation-section" id="step2">
+      <h2 class="mb-4">Select Your Dates</h2>
+      <div class="calendar">
+        <h4>January 2025</h4>
+        <div class="calendar-grid" id="calendar"></div>
+      </div>
+      <div class="navigation-buttons">
+        <button class="btn btn-outline-primary" onclick="previousStep(2)">
+        Previous
+        </button>
+        <button class="btn btn-primary" onclick="nextStep(2)">Next</button>
+      </div>
+      </div>
+
+      <!-- Section 3: Room Selection -->
+      <div class="reservation-section" id="step3">
+      <h2 class="mb-4">Choose Your Room</h2>
+      <div class="room-carousel">
+        <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="room-card">
+          <img
+            src="images/chambre/chambre_classique.webp"
+            alt="Classic Room"
+            class="room-image"
+          />
+          <div class="room-details">
+            <h4>Classic Room</h4>
+            <p>From 350€ per night</p>
+            <button
+            type="button"
+            class="btn btn-outline"
+            title="View Room Details">View room details</button>
+
+    <!-- Modal pour les détails des chambres -->
+    <div class="modal" id="roomDetailsModal">
+      <div class="modal-content">
+        <button type="button" class="btn btn-primary mt-3" onclick="closeModal()">View room details</button>
+        <div id="modalContent"></div>
+        <button class="btn btn-primary mt-3" onclick="closeModal()">
+          Fermer
+        </button>
+      </div>
+    </div>
+    <!-- footer Begins -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Hotel Chambord</h5>
+            <p>1 Avenue Montaigne<br />75008 Paris, France</p>
+            <p>
+              Tél : +33 (0)1 23 45 67 89<br />Email : contact@hotelchambord.com
+            </p>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Liens rapides</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white">Accueil</a>
+              </li>
+              <li>
+                <a href="chambre.html" class="text-white">Chambres & Suites</a>
+              </li>
+              <li>
+                <a href="restaurant.html" class="text-white">Restaurant</a>
+              </li>
+              <li>
+                <a href="spa.html" class="text-white">Spa & Bien-être</a>
+              </li>
+              <li>
+                <a href="reservation.html" class="text-white">Réservations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Informations</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="hotel.html#qui-sommes-nous" class="text-white"
+                  >Qui sommes-nous ?</a
+                >
+              </li>
+              <li>
+                <a href="hotel.html#carriere" class="text-white">Carrières</a>
+              </li>
+              <li>
+                <a href="hotel.html#presse" class="text-white">Presse</a>
+              </li>
+              <li><a href="#" class="text-white">Conditions générales</a></li>
+              <li>
+                <a href="#" class="text-white">Politique de confidentialité</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-uppercase mb-4 footer-h5">Suivez-nous</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Votre email"
+                  aria-label="Votre email"
+                  aria-describedby="button-addon2"
+                />
+
+                <button
+                  class="btn btn-outline-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  S'abonner à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2024 Hotel Chambord. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Mentions légales</a>
+              </li>
+              <li class="list-inline-item">·</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Plan du site</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+    <!-- Bootstrap Js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script2.js"></script>
+    <script>
+      let currentStep = 1;
+      let selectedDates = [];
+      let selectedRoom = null;
+      let selectedRoomPrice = 0;
+
+      function updateCount(type, change) {
+        const countElement = document.getElementById(`${type}Count`);
+        let count = parseInt(countElement.textContent);
+        if (type === "adults") {
+          count = Math.max(1, Math.min(4, count + change));
+        } else {
+          count = Math.max(0, Math.min(4, count + change));
+        }
+        countElement.textContent = count;
+      }
+
+      function initCalendar() {
+        const calendar = document.getElementById("calendar");
+        calendar.innerHTML = "";
+
+        // En-têtes des jours
+        const days = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];
+        days.forEach((day) => {
+          const dayHeader = document.createElement("div");
+          dayHeader.className = "calendar-day font-weight-bold";
+          dayHeader.textContent = day;
+          calendar.appendChild(dayHeader);
+        });
+
+        // Jours du mois
+        for (let i = 1; i <= 31; i++) {
+          const day = document.createElement("div");
+          day.className = "calendar-day";
+          if (i < 16) {
+            day.className += " disabled";
+          }
+          day.textContent = i;
+
+          if (!day.classList.contains("disabled")) {
+            day.onclick = () => selectDate(day, i);
+          }
+
+          calendar.appendChild(day);
+        }
+      }
+
+      function selectDate(dayElement, date) {
+        if (selectedDates.length === 2) {
+          selectedDates = [];
+          document.querySelectorAll(".calendar-day").forEach((day) => {
+            day.classList.remove("selected");
+          });
+        }
+
+        dayElement.classList.add("selected");
+        selectedDates.push(date);
+
+        if (selectedDates.length === 2) {
+          calculatePrice();
+        }
+      }
+
+      function selectRoom(roomType, basePrice) {
+        selectedRoom = roomType;
+        selectedRoomPrice = basePrice;
+        calculatePrice();
+        nextStep(3);
+      }
+
+      function calculatePrice() {
+        if (selectedDates.length === 2 && selectedRoom) {
+          const nights = selectedDates[1] - selectedDates[0];
+          let total = 0;
+
+          for (let i = selectedDates[0]; i < selectedDates[1]; i++) {
+            const date = new Date(2025, 0, i);
+            const isWeekend = date.getDay() === 0 || date.getDay() === 6;
+            const dailyPrice = isWeekend
+              ? selectedRoomPrice * 1.25
+              : selectedRoomPrice;
+            total += dailyPrice;
+          }
+
+          updateSummary(total, nights);
+        }
+      }
+
+      function updateSummary(total, nights) {
+        const summary = document.getElementById("reservationSummary");
+        const adults = document.getElementById("adultsCount").textContent;
+        const children = document.getElementById("childrenCount").textContent;
+
+        summary.innerHTML = `
+                <p><strong>Voyageurs:</strong> ${adults} adulte(s), ${children} enfant(s)</p>
+                <p><strong>Dates:</strong> ${selectedDates[0]} - ${
+          selectedDates[1]
+        } janvier 2025 (${nights} nuits)</p>
+                <p><strong>Chambre:</strong> ${
+                  selectedRoom.charAt(0).toUpperCase() + selectedRoom.slice(1)
+                }</p>
+            `;
+
+        document.getElementById("totalPrice").textContent = `${total}€`;
+      }
+
+      function showRoomDetails(roomType) {
+        const modal = document.getElementById("roomDetailsModal");
+        const title = document.getElementById("modalTitle");
+        const content = document.getElementById("modalContent");
+
+        const roomDetails = {
+          classique: {
+            title: "Chambre Classique",
+            description:
+              "Nos Chambres Classiques incarnent la quintessence du charme à la française, idéales pour un séjour intimiste dans un écrin raffiné.",
+            amenities: [
+              "Lit à baldaquin",
+              "Salle de bain en marbre",
+              "Vue sur jardin",
+            ],
+          },
+          confort: {
+            title: "Chambre Confort",
+            description:
+              "Les Chambres Confort offrent une ambiance chaleureuse et élégante, idéale pour les voyageurs en quête de sophistication.",
+            amenities: ["Lit king-size", "Salon privé", "Vue sur Paris"],
+          },
+        };
+
+        const details = roomDetails[roomType];
+        title.textContent = details.title;
+        content.innerHTML = `
+                <p>${details.description}</p>
+                <h5>Équipements:</h5>
+                <ul>
+                    ${details.amenities
+                      .map((item) => `<li>${item}</li>`)
+                      .join("")}
+                </ul>
+            `;
+
+        modal.classList.add("show");
+      }
+
+      function closeModal() {
+        document.getElementById("roomDetailsModal").classList.remove("show");
+      }
+
+      function nextStep(step) {
+        document.querySelector(`#step${step}`).classList.remove("active");
+        document.querySelector(`#step${step + 1}`).classList.add("active");
+        document.querySelectorAll(".step")[step].classList.add("active");
+        currentStep = step + 1;
+
+        if (step === 1) {
+          initCalendar();
+        }
+      }
+
+      function previousStep(step) {
+        document.querySelector(`#step${step}`).classList.remove("active");
+        document.querySelector(`#step${step - 1}`).classList.add("active");
+        document.querySelectorAll(".step")[step - 1].classList.remove("active");
+        currentStep = step - 1;
+      }
+
+      function goToCart() {
+        // Sauvegarder les données de réservation dans sessionStorage
+        const reservationData = {
+          adults: document.getElementById("adultsCount").textContent,
+          children: document.getElementById("childrenCount").textContent,
+          dates: selectedDates,
+          room: selectedRoom,
+          total: document.getElementById("totalPrice").textContent,
+        };
+        sessionStorage.setItem("reservation", JSON.stringify(reservationData));
+
+        // Rediriger vers la page panier
+        window.location.href = "panier.html";
+      }
+
+      // Initialisation
+      document.addEventListener("DOMContentLoaded", () => {
+        initCalendar();
+      });
+    </script>
+  </body>
+</html>

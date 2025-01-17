@@ -1,0 +1,270 @@
+/*! définition de variables pour le style global du site*/
+:root {
+  /* color palette */
+  --blue: #0c2461;
+  --gold: #d4af37;
+  --white: #f9f7f5;
+  --grey: #303030;
+  /* font family */
+  --maintitle: "Girassol", serif;
+  --subtitle: "Libre Caslon Display", serif;
+  --text: "Roboto", serif;
+
+  /* animation */
+  --animate-duration: 2s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+
+/* START CSS ABOUT PAGE */
+
+body {
+  background-color: var(--grey); /*arriereplan sombre */
+  color: var(--white);
+}
+
+h2 {
+  font-family: var(--maintitle);
+  color: var(--gold);
+}
+
+h3 {
+  font-family: var(--subtitle);
+  color: var(--gold);
+}
+
+.header .h2 {
+  color: var(--gold);
+  font-family: var(--maintitle);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  animation: titleFloat 4s ease-in-out infinite;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sub {
+  font-family: var(--subtitle);
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--grey);
+  text-shadow: 1px 1px 1px var(--white);
+}
+
+.card {
+  border-color: var(--gold);
+  background-color: var(--grey);
+}
+
+/* Hero Section Style */
+.hero-section {
+  background-image: url("../../images/4.webp"); /*! background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Superposition sombre */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  font-size: 1.5rem;
+}
+
+/* Fade-in on scroll */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+/*! parallax effet */
+/*.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}*/
+/*! ------ ANIMATION CARDS ------- */
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*? FADE IN LEFT ----------- */
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+/*? ----------- FADE IN RIGHT */
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+/*? FADE IN UP  ----------- */
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+/* Plan google map */
+#map {
+  width: 600px;
+  height: 450px;
+  border: 0;
+}
+#acces {
+  background-image: url("../../images/about1.webp");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  font-family: var(--subtitle);
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--white);
+  text-shadow: 1px 1px 1px var(--grey);
+}
+/* Les formulaires */
+#contact,
+#carriere {
+  background-color: var(--white);
+  padding: 10%;
+}
+.contact-form {
+  margin: 10px 0;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid var(--white);
+  box-shadow: var(--gold) 1px 1px 6px;
+}
+.bouton {
+  background-color: var(--gold);
+  border-radius: 5px;
+  color: var(--grey);
+  border: 1px solid var(--gold);
+  font-family: var(--text);
+  box-shadow: #303030 2px 2px 5px;
+  padding: 5px;
+}
+.bouton:hover {
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: #d4af37;
+}

@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spa</title>
+    <!-- fichier css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/pages/spa.css" />
+    <!-- Google Font CDN pour les fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Libre+Caslon+Display&family=Roboto:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/29e60fcc8f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <!-- LOGO START -->
+            <!-- H1 - nom hotel + 5 icones avec étoiles-->
+            <h1 class="logo">Hotel Chambord</h1>
+            <div class="d-flex justify-content-center">
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+              <i class="fa-solid fa-star fa-xs"></i>
+            </div>
+          </a>
+          <!-- LOGO END -->
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <!-- Acceuil -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Acceuil</a
+                >
+              </li>
+              <!-- Chambre -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Chambre</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="chambre.html"
+                      >Voir toutes les gammes</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#classique"
+                      >Classique</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#confort"
+                      >Confort</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#deluxe"
+                      >Deluxe</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="chambre.html#suite">Suite</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- Restaurant -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Restaurant</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="restaurant.html"
+                      >Découvrez notre restaurant</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-brasserie"
+                      >Carte Brasserie</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-degustation"
+                      >Carte Dégustation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="restaurant.html#carte-restaurant"
+                      >Carte Restaurant</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Spa -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >Le Spa</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="spa.html"
+                      >Le Spa et nos Soins</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-detente"
+                      >Soin Détente</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-decouverte"
+                      >Soin Découverte</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-relaxant"
+                      >Soin Relaxant</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-plaisir"
+                      >Soin Plaisir</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="spa.html#soin-evasion"
+                      >Soin Evasion</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- Reservation -->
+              <li class="nav-item">
+                <a class="nav-link" href="reservation.html" target="_blank"
+                  >Réservation</a
+                >
+              </li>
+              <!-- Avis -->
+              <li class="nav-item">
+                <a class="nav-link" href="avis.html">Avis</a>
+              </li>
+              <!-- Hotel -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >L'hôtel</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="hotel.html" target="_blank"
+                      >Qui sommes-nous?</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#acces">Accès</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#contact"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#carriere"
+                      >Recrutement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#evenement"
+                      >Evénement</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="hotel.html#presse">Presse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="actualités.html">Actualités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="hotel.html#contact">Contact</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex me-2" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Rechercher"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-sucess"
+                type="submit"
+                title="Rechercher"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+            <div>
+              <a
+                href="panier.html#modal-content"
+                class="btn btn-outline-sucess"
+              >
+                <i class="fa fa-shopping-cart"></i>Panier
+              </a>
+            </div>
+            <div class="language-selector ms-2">
+              <a href="#" class="btn btn-link p-0 me-2" id="fr-lang">
+                <img src="images/france.webp" alt="Français" />
+              </a>
+              <a href="#" class="btn btn-link p-0" id="en-lang">
+                <img src="images/united-kingdom.webp" alt="English" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- fin header -->
+    <!-- boutton flottant réserver -->
+    <button id="reservationButton" class="floating-button">
+      <i class="fas fa-calendar-alt"></i> Réserver
+    </button>
+    <!-- boutton scroll up -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="scrollup">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- boutton scroll up end -->
+
+    <!-- spa -->
+    <!-- #01 Section présentation du spa -->
+    <section id="spa-présentation" class="parallax vh-100 m-0">
+      <div class="overlay text-center">
+        <div class="parallax-content">
+          <br />
+          <!-- titre -->
+          <h2 class="text-center">Le Spa de l'Hotel Chambord Paris</h2>
+          <hr />
+          <br />
+          <!-- ecrire 3 ligne sur le spa ci-dessous -->
+          <p>
+            Bienvenue dans un sanctuaire de sérénité et de raffinement, où
+            l'élégance du Château de Chambord rencontre l'art du bien-être à la
+            française. Notre Spa, niché dans le cœur de Paris, vous invite à un
+            voyage sensoriel, alliant tradition, modernité et une touche
+            d'humour pour chasser le stress avec style
+          </p>
+          <p>
+            Découvrez notre carte de soins, inspirée par les richesses de la
+            Renaissance, et laissez-vous choyer par nos experts en bien-être. Un
+            moment de détente unique, pour une beauté intemporelle.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <h3 class="text-center">Les Soins</h3> -->
+    <!-- Présentation des soin -->
+    <!-- <p class="text-center">
+      Notre Spa vous propose une gamme de soins exclusifs, conçus pour vous
+      offrir une expérience de bien-être inoubliable. Inspirés par les rituels
+      de beauté de la Renaissance, nos soins sont réalisés avec des produits
+      naturels et des techniques de pointe, pour une relaxation profonde et une
+      beauté éclatante.
+    </p> -->
+    <!--! #02 Section Soin Détente -->
+    <section class="container-fluid py-5" id="soin-detente">
+      <!-- Partie 1 - presentation du soin -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="mb-3">Nos Soins Détente</h2>
+          <p class="lead">
+            Une expérience de bien-être inoubliable inspirée par les fastes de
+            la Renaissance. Chaque soin est une véritable œuvre d'art pour la
+            régénération complète de votre corps.
+          </p>
+        </div>
+      </div>
+      <!-- Partie 2 - fiche soin -->
+      <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="images/spa/spa-square1.webp"
+              class="card-img-top"
+              alt="Bain Royal à la Lavande et Miel"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Bain Royal à la Lavande et Miel</h4>
+              <p class="card-text">
+                Détendez-vous dans une baignoire sculptée, remplie d'eau tiède
+                infusée à la lavande et au miel, tout en savourant un verre de
+                vin pétillant.
+              </p>
+              <p><em>60 min – 90€</em></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="images/spa/spa-square2.webp"
+              class="card-img-top"
+              alt="Massage Chambord aux Huiles de Raisin et Truffe"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Massage Chambord aux Huiles de Raisin et Truffe
+              </h4>
+              <p class="card-text">
+                Un massage luxueux pour hydrater et nourrir votre peau avec des
+                huiles rares.
+              </p>
+              <p><em>90 min – 150€</em></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="images/spa/spa-square3.webp"
+              class="card-img-top"
+              alt="Enveloppement Divin au Chocolat Noir"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Enveloppement Divin au Chocolat Noir</h4>
+              <p class="card-text">
+                Une détox gourmande qui vous laisse irrésistiblement doux… et
+                délicieux !
+              </p>
+              <p><em>45 min – 80€</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Partie 3 - fiche tarif -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title text-center mb-4">
+                Tarifs des soins Détente
+              </h3>
+              <table class="table table-hover text-center">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Soin</th>
+                    <th>Durée</th>
+                    <th>Prix</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bain Royal à la Lavande et Miel</td>
+                    <td>60 min</td>
+                    <td>90€</td>
+                  </tr>
+                  <tr>
+                    <td>Massage Chambord aux Huiles de Raisin</td>
+                    <td>90 min</td>
+                    <td>150€</td>
+                  </tr>
+                  <tr>
+                    <td>Enveloppement Divin au Chocolat Noir</td>
+                    <td>45 min</td>
+                    <td>80€</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Partie 4 - Reserver -->
+      <div class="row mt-5 pb-4">
+        <div class="col-12 text-center">
+          <p>
+            Nos soins détente sont disponibles à la carte ou en formules
+            spécifiques, pour une expérience sur-mesure.
+          </p>
+          <p>
+            Pour toute réservation ou demande de renseignements, contactez notre
+            équipe de réception.
+          </p>
+          <button class="btn  mt-3 bouton" data-modal="reservation">Réserver un soin</button>
+        </div>
+      </div>
+    </section>
+
+    <!--! #03 Section Soin Découverte -->
+    <section class="container-fluid py-5" id="soin-decouverte">
+      <!-- Partie 1 - presentation du soin -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="mb-3">Soin Découverte</h2>
+          <p class="lead">
+            Une expérience sensorielle unique qui réveille tous vos sens et
+            apaise votre esprit.
+          </p>
+        </div>
+      </div>
+      <!-- Partie 2 - fiche soin -->
+      <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="images/spa/spa-square4.webp"
+              class="card-img-top"
+              alt="Soin Visage Renaissance Lumière"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Soin Visage Renaissance Lumière</h4>
+              <p class="card-text">
+                Retrouvez l'éclat de votre peau avec ce soin visage inspiré des
+                techniques de la Renaissance.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">75 min – 120€</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="images/spa/spa-square5.webp"
+              class="card-img-top"
+              alt="Rituel Sonore Cristal & Harmonie"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Rituel Sonore Cristal & Harmonie</h4>
+              <p class="card-text">
+                Laissez-vous bercer par les vibrations apaisantes des bols de
+                cristal pour une relaxation profonde.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">50 min – 95€</small>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="images/spa/spa-square6.webp"
+              class="card-img-top"
+              alt="Gommage aux Pétales d'Or"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Gommage aux Pétales d'Or</h4>
+              <p class="card-text">
+                Offrez à votre peau un éclat royal avec ce gommage luxueux aux
+                pétales d'or.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">30 min – 70€</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Partie 3 - fiche tarif -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title text-center mb-4">
+                Tarifs des soins Découverte
+              </h3>
+              <table class="table table-hover">
+                <thead class="thead-light">
+                  <tr>
+                    <th>Soin</th>
+                    <th>Durée</th>
+                    <th>Prix</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Soin Visage Renaissance Lumière</td>
+                    <td>75 min</td>
+                    <td>120€</td>
+                  </tr>
+                  <tr>
+                    <td>Rituel Sonore Cristal & Harmonie</td>
+                    <td>50 min</td>
+                    <td>95€</td>
+                  </tr>
+                  <tr>
+                    <td>Gommage aux Pétales d'Or</td>
+                    <td>30 min</td>
+                    <td>70€</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Partie 4 - Reserver -->
+      <div class="row mt-5 pb-4">
+        <div class="col-md-8 mx-auto text-center">
+          <p>
+            Découvrez nos soins uniques conçus pour éveiller vos sens et vous
+            offrir une expérience de bien-être inoubliable.
+          </p>
+          <button class="btn  mt-3 bouton" data-modal="reservation">Réserver un soin découverte</button>
+        </div>
+      </div>
+    </section>
+
+    <!--! #04 Section Soin Relaxant -->
+    <section class="container-fluid py-5" id="soin-relaxant">
+      <!-- Partie 1 - presentation du soin -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="mb-3">Soin Relaxant</h2>
+          <p class="lead">
+            Inspiré par les thermes d'antan, notre espace de bains privés est
+            parfait pour s'abandonner à la détente en solo ou en duo.
+          </p>
+        </div>
+      </div>
+      <!-- Partie 2 - fiche soin -->
+      <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="images/spa/spa-square7.webp"
+              class="card-img-top"
+              alt="Bain à remous au Champagne"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Bain à remous au champagne</h4>
+              <p class="card-text">
+                Partagez un moment d'intimité dans un cadre inspiré de la
+                splendeur de la Renaissance.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">45 min – 130€</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="images/spa/spa-square3.webp"
+              class="card-img-top"
+              alt="Duo Romantique à la Renaissance"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Duo Romantique à la Renaissance</h4>
+              <p class="card-text">
+                Partagez un moment d'intimité dans un cadre inspiré de la
+                splendeur de la Renaissance.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">60 min – 180€</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="images/spa/spa-sauna.webp"
+              class="card-img-top"
+              alt="Sauna Aromatique"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Sauna Aromatique</h4>
+              <p class="card-text">
+                Détoxifiez votre corps et votre esprit dans notre sauna aux
+                essences aromatiques apaisantes.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">30 min – 50€</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Partie 3 - fiche tarif -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title text-center mb-4">
+                Tarifs des soins Relaxant
+              </h3>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Soin</th>
+                    <th>Durée</th>
+                    <th>Prix</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bain à Remous au Champagne</td>
+                    <td>45 min</td>
+                    <td>130€</td>
+                  </tr>
+                  <tr>
+                    <td>Duo Romantique à la Renaissance</td>
+                    <td>60 min</td>
+                    <td>180€</td>
+                  </tr>
+                  <tr>
+                    <td>Sauna Aromatique</td>
+                    <td>30 min</td>
+                    <td>50€</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Partie 4 - Reserver -->
+      <div class="row mt-5 pb-4">
+        <div class="col-md-8 mx-auto text-center">
+          <p>
+            Découvrez nos soins uniques conçus pour éveiller vos sens et vous
+            offrir une expérience de bien-être inoubliable.
+          </p>
+          <button class="btn  mt-3 bouton" data-modal="reservation">Réserver un soin relaxant</button>
+        </div>
+      </div>
+    </section>
+    <!--! #05 Section Soin Plaisir -->
+    <section class="container-fluid py-5" id="soin-plaisir">
+      <!-- Partie 1 - presentation du soin -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="mb-3">Soin Plaisir</h2>
+          <p class="lead">
+            Quand le bien-être et la gourmandise se rencontrent.
+          </p>
+        </div>
+        <!-- Partie 2 - fiche soin -->
+        <div class="row mb-5">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="images/spa/spa-gourmand2.webp" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Massage Gourmand à la Vanille</h4>
+                <p class="card-text">
+                  Laissez-vous envelopper par les effluves sucrées de la vanille
+                  lors de ce massage sensoriel qui éveillera vos sens et
+                  apaisera votre corps et votre esprit.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">60 min - 110 €</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="images/spa/spa-macaron.webp" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Pause Macaron au Spa</h4>
+                <p class="card-text">
+                  Offrez-vous un moment de douceur exquis avec notre pause
+                  macaron, alliant les bienfaits relaxants du spa à la
+                  délicatesse gustative de cette pâtisserie française
+                  emblématique.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">30 min - 55 €</small>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img src="images/spa/spa-gourmand.webp" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Gommage au Café et Épices</h4>
+                <p class="card-text">
+                  Réveillez votre peau et vos sens avec notre gommage tonifiant
+                  au café et aux épices, une expérience vivifiante qui laissera
+                  votre corps lisse, parfumé et revitalisé.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">40 min - 85 €</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partie 3 - Tableau tarif soins plaisir -->
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title text-center mb-4">
+                  Tarifs des soins Plaisir
+                </h3>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Soin</th>
+                      <th>Durée</th>
+                      <th>Prix</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Massage Gourmand à la Vanille</td>
+                      <td>60 min</td>
+                      <td>110€</td>
+                    </tr>
+                    <tr>
+                      <td>Pause Macaron au Spa</td>
+                      <td>30 min</td>
+                      <td>55€</td>
+                    </tr>
+                    <tr>
+                      <td>Gommage au Café et Épices</td>
+                      <td>40 min</td>
+                      <td>85€</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Partie 4 - Reserver -->
+        <div class="row mt-5 pb-4">
+          <div class="col-md-8 mx-auto text-center">
+            <p>
+              Découvrez nos soins uniques conçus pour éveiller vos sens et vous
+              offrir une expérience de bien-être inoubliable.
+            </p> 
+            <button class="btn  mt-3 bouton" data-modal="reservation">Réserver un soin plaisir</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! #06 Section Soin Evasion -->
+    <section class="container-fluid py-5" id="soin-evasion">
+              <!-- Partie 1 - presentation du soin -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="mb-3">Soin Evasion</h2>
+          <p class="lead">
+            Un espace où votre chevelure et vos mains retrouvent toute leur
+          splendeur.
+          </p>
+        </div>
+      </div>
+    
+        <!-- Partie 3 - Tableau tarif soins évasion -->
+        <div class="container my-5">
+          <h2 class="text-center mb-4">Tarifs des soins Évasion</h2>
+          <table class="table table-hover text-center">
+            <thead>
+              <tr>
+                <th>Soin</th>
+                <th>Durée</th>
+                <th>Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Coiffure Renaissance</td>
+                <td>60 min</td>
+                <td>80€</td>
+              </tr>
+              <tr>
+                <td>Manucure Éclat de Diamant</td>
+                <td>45 min</td>
+                <td>60€</td>
+              </tr>
+              <tr>
+                <td>Soin Capillaire au Lait d’Ânesse</td>
+                <td>45 min</td>
+                <td>75€</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Partie 4 - Reserver -->
+        <div class="row mt-5 pb-4">
+          <div class="col-md-8 mx-auto text-center">
+            <p>
+              Découvrez nos soins uniques conçus pour éveiller vos sens et vous
+              offrir une expérience de bien-être inoubliable.
+            </p> 
+            <button class="btn  mt-3 bouton" data-modal="reservation">Réserver un soin évasion</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! 07 Section témoingnages -->
+    <section id="temoignages" class="container">
+      <h2>Témoignages Clients</h2>
+      <div class="testimonial-carousel">
+        <!-- carrousel de témoignages -->
+        <div class="testimonial-item">
+
+          <p class="testimonial-text">"Une expérience divine ! Le massage Chambord m'a transportée dans un autre monde. Je me sens rajeunie de 10 ans !"</p>
+          <p class="testimonial-author">Sophie D.</p>
+        </div>
+        <div class="testimonial-item">
+
+          <p class="testimonial-text">"Le bain royal à la lavande est un pur moment de détente. Le personnel est aux petits soins, je recommande vivement !"</p>
+          <p class="testimonial-author">Marc L.</p>
+        </div>
+        <div class="testimonial-item">
+          <p class="testimonial-text">"L'enveloppement au chocolat est une véritable gourmandise pour la peau. Un moment de pure indulgence !"</p>
+          <p class="testimonial-author">Émilie R.</p>
+        </div>
+      </div>
+    </section>
+  
+    <section id="gallery" class="container py-5">
+      <h2>Notre Spa en Images</h2>
+      <div class="row g-4">
+        <!-- les images de la galerie -->
+        <div class="col-md-4 gallery-item">
+          <img src="images/spa/spa-square2.webp" alt="Intérieur du spa" class="img-fluid" onclick="openModal(this)">
+        </div>
+        <div class="col-md-4 gallery-item">
+          <img src="images/spa/spa-square3.webp" alt="Salle de massage" class="img-fluid" onclick="openModal(this)">
+        </div>
+        <div class="col-md-4 gallery-item">
+          <img src="images/spa/spa-square6.webp" alt="Bain royal" class="img-fluid" onclick="openModal(this)">
+        </div>
+        <div class="col-md-4 gallery-item">
+          <img src="images/spa/spa-sauna.webp" alt="Sauna" class="img-fluid" onclick="openModal(this)">
+        </div>
+        <div class="col-md-4 gallery-item">
+          <img src="images/spa/spa-square4.webp" alt="Espace détente" class="img-fluid" onclick="openModal(this)">
+        </div>
+        <div class="col-md-4 gallery-item">
+          <img src="images/spa/spa-square7.webp" alt="Produits du spa" class="img-fluid" onclick="openModal(this)">
+        </div>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" alt="Modal Image">
+      <div id="caption"></div>
+    </div>
+  </main>
+  <!-- Modal reservation de soin -->
+  <div id="reservation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Réserver un soin</h2>
+      <form id="reservation-form">
+        <!-- champs du formulaire de réservation -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Téléphone</label>
+          <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="mb-3">
+          <label for="treatment" class="form-label">Soin</label>
+          <select class="form-select" id="treatment" name="treatment" required>
+            <option value="soin-detente">Soin Détente</option>
+            <option value="soin-decouverte">Soin Découverte</option>
+            <option value="soin-relaxant">Soin Relaxant</option>
+            <option value="soin-plaisir">Soin Plaisir</option>
+            <option value="soin-evasion">Soin Evasion</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="date" class="form-label">Date</label>
+          <input type="date" class="form-control" id="date" name="date" required>
+        </div>
+        <div class="mb-3">
+          <label for="time" class="form-label">Heure</label>
+          <input type="time" class="form-control" id="time" name="time" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Réserver</button>
+      </form>
+    </div>
+  </div>
+    <!-- fin spa -->
+    <nav id="sidebar-menu">
+      <ul>
+        <li><a href="#spa-présentation" class="active">Le Spa</a></li>
+        <li><a href="#soin-detente">Soin Détente</a></li>
+        <li><a href="#soin-decouverte">Soin Découverte</a></li>
+        <li><a href="#soin-relaxant">Soin Relaxant</a></li>
+        <li><a href="#soin-plaisir">Soin Plaisir</a></li>
+        <li><a href="#soin-evasion">Soin Evasion</a></li>
+        <li> <a href="#temoignages">Témoignages</a> </li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- footer Begins -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Hotel Chambord</h5>
+            <p>1 Avenue Montaigne<br />75008 Paris, France</p>
+            <p>
+              Tél : +33 (0)1 23 45 67 89<br />Email : contact@hotelchambord.com
+            </p>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Liens rapides</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white">Accueil</a>
+              </li>
+              <li>
+                <a href="chambre.html" class="text-white">Chambres & Suites</a>
+              </li>
+              <li>
+                <a href="restaurant.html" class="text-white">Restaurant</a>
+              </li>
+              <li>
+                <a href="spa.html" class="text-white">Spa & Bien-être</a>
+              </li>
+              <li>
+                <a href="reservation.html" class="text-white">Réservations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 footer-h5">Informations</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="hotel.html#qui-sommes-nous" class="text-white"
+                  >Qui sommes-nous ?</a
+                >
+              </li>
+              <li>
+                <a href="hotel.html#carriere" class="text-white">Carrières</a>
+              </li>
+              <li>
+                <a href="hotel.html#presse" class="text-white">Presse</a>
+              </li>
+              <li><a href="#" class="text-white">Conditions générales</a></li>
+              <li>
+                <a href="#" class="text-white">Politique de confidentialité</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5 class="text-uppercase mb-4 footer-h5">Suivez-nous</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white" title="linkedin"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+            <form class="mt-4">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Votre email"
+                  aria-label="Votre email"
+                  aria-describedby="button-addon2"
+                />
+
+                <button
+                  class="btn btn-outline-light"
+                  type="button"
+                  id="button-addon2"
+                >
+                  S'abonner à la newsletter
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>© 2024 Hotel Chambord. Tous droits réservés.</p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Mentions légales</a>
+              </li>
+              <li class="list-inline-item">·</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white">Plan du site</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer ends -->
+    <!-- Bootstrap Js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script2.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+        // sidebar avec class active qui change au scroll 
+        const sections = document.querySelectorAll("section[id]");
+        const menuItems = document.querySelectorAll("#sidebar-menu a");
+
+        function onScroll() {
+          let scrollPosition = window.pageYOffset;
+
+          sections.forEach((section) => {
+            if (
+              scrollPosition >= section.offsetTop - 50 &&
+              scrollPosition < section.offsetTop + section.offsetHeight - 50
+            ) {
+              menuItems.forEach((item) => {
+                item.classList.remove("active");
+                if (
+                  item.getAttribute("href").substring(1) ===
+                  section.getAttribute("id")
+                ) {
+                  item.classList.add("active");
+                }
+              });
+            }
+          });
+            }
+            window.addEventListener("scroll", onScroll);
+          });
+    
+          /* Fonction: openModal
+          Ouvre une fenêtre modale affichant une image et sa légende.
+          Paramètres:
+            - element: L'élément HTML (image) qui a été cliqué pour ouvrir la modale.
+          Comportement:
+            - Affiche la modale en définissant son style d'affichage sur "block".
+            - Définit la source de l'image de la modale sur la source de l'image cliquée.
+            - Définit le texte de la légende de la modale sur le texte alt de l'image cliquée.
+            - Ajoute un événement onclick au bouton de fermeture (span) pour masquer la modale lorsqu'il est cliqué.
+           */
+            function openModal(element) {
+            const modal = document.getElementById("myModal");
+            const modalImg = document.getElementById("img01");
+            const captionText = document.getElementById("caption");
+        
+            modal.style.display = "block";
+            modalImg.src = element.src;
+            captionText.innerHTML = element.alt;
+        
+            const span = document.getElementsByClassName("close")[0];
+            span.onclick = function () {
+              modal.style.display = "none";
+            };
+
+            // Set modal to 50% of the screen
+            modalImg.style.width = "50%";
+            modalImg.style.left = "30%";
+            }
+
+            //! START Modal reserver un soin qui s'ouvre sur le coté droit de la page 
+            document.addEventListener("DOMContentLoaded", function () {
+              // Sélectionner tous les boutons de réservation
+              const reservationButtons = document.querySelectorAll(".bouton");
+              // Sélectionner la modale de réservation
+              const reservationModal = document.getElementById("reservation-modal");
+              // Sélectionner le bouton de fermeture de la modale
+              const closeModal = reservationModal.querySelector(".close");
+
+              // Ajouter un événement de clic à chaque bouton de réservation
+              reservationButtons.forEach(button => {
+              button.addEventListener("click", function () {
+              // Afficher la modale de réservation
+              reservationModal.style.display = "block";
+              // Positionner la modale à droite de l'écran
+              reservationModal.style.right = "0";
+              reservationModal.style.top = "0";
+              reservationModal.style.height = "100%";
+              reservationModal.style.width = "30%";
+              reservationModal.style.position = "fixed";
+              });
+              });
+
+              // Ajouter un événement de clic au bouton de fermeture de la modale
+              closeModal.addEventListener("click", function () {
+              // Masquer la modale de réservation
+              reservationModal.style.display = "none";
+              });
+
+              // Ajouter un événement de clic à la fenêtre
+              window.addEventListener("click", function (event) {
+              // Masquer la modale si l'utilisateur clique en dehors de celle-ci
+              if (event.target === reservationModal) {
+              reservationModal.style.display = "none";
+              }
+              });
+              /* Lorsque l'écran est de taille inférieure ou égale à 768px, la modal prend toute la largeur de l'écran */
+              if (window.innerWidth <= 768) {
+              reservationModal.style.width = "50%";
+              }
+            });
+            // FIN Modal reserver un soin
+    </script>
+  </body>
+</html>

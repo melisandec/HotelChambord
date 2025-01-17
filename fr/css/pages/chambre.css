@@ -1,0 +1,319 @@
+/* Définition des variables globales */
+:root {
+  --blue: #0c2461;
+  --gold: #d4af37;
+  --white: #f9f7f5;
+  --grey: #303030;
+  --maintitle: "Girassol", serif;
+  --subtitle: "Libre Caslon Display", serif;
+  --text: "Roboto", serif;
+}
+
+/* Style global */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.full-width {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+section {
+  border: none;
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  margin-bottom: 2rem;
+}
+main h1 {
+  font-family: var(--maintitle);
+  text-shadow: 2px 1px 4px var(--grey);
+}
+section h2 {
+  font-family: var(--subtitle);
+  color: var(--grey);
+}
+
+section p {
+  font-size: 1.2em;
+  color: var(--grey);
+  font-family: var(--subtitle);
+}
+
+button {
+  background-color: var(--gold);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: var(--text);
+}
+
+button:hover {
+  background-color: var(--grey);
+}
+
+/* Animations fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation slideIn */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+section:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+section:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+section:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+section:nth-child(4) {
+  animation-delay: 0.8s;
+}
+#card {
+  width: 20rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#card h5,
+#card p {
+  font-family: var(--subtitle);
+  text-shadow: 0.5px 0 0 currentColor; /* Creates a slightly bolder effect */
+  font-weight: bold;
+}
+#card li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /* for Light */
+}
+#card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Image styles */
+.img-fluid {
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+/* style pour la Modal Reservez une chambre */
+
+/* Styles pour la modale */
+.modal-right {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 500px;
+  height: 100vh;
+  background: white;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 1050;
+  overflow-y: auto;
+}
+
+.modal-right.show {
+  right: 0;
+}
+
+.modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header h3 {
+  color: var(--blue);
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.room-selector {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.room-modifier {
+  display: none;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.room-modifier.show {
+  display: block;
+}
+
+.counter-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter-btn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #1e3a8a;
+  background: white;
+  color: #1e3a8a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.calendar {
+  margin-top: 20px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.calendar-day {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+.calendar-day.disabled {
+  background: #e7e6e6;
+  cursor: not-allowed;
+}
+.calendar-day.disabled .price {
+  color: #e7e6e6;
+}
+.calendar-day.selected {
+  background: var(--blue);
+  border: 2px solid var(--gold);
+  color: white;
+}
+.calendar-day.selected .price {
+  color: white;
+}
+
+.calendar-day .price {
+  font-size: 0.8rem;
+  color: var(--blue);
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 15px;
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.confirm-btn.show {
+  display: block;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-inner img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: white;
+}

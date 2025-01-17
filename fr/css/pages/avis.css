@@ -1,0 +1,95 @@
+/*! définition de variables pour le style global du site*/
+:root {
+  /* color palette */
+  --primary: #2c2c2c;
+  --blue: #0c2461;
+  --gold: #d4af37;
+  --white: #f9f7f5;
+  --grey: #303030;
+  /* font family */
+  --maintitle: "Girassol", serif;
+  --subtitle: "Libre Caslon Display", serif;
+  --text: "Roboto", serif;
+
+  /* animation */
+  --animate-duration: 2s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+
+.formulaire-avis {
+  background-color: var(--grey);
+  color: var(--white);
+  box-shadow: 1px 1px 10px rgb(36, 36, 36);
+  padding: 20px;
+  margin: 20px;
+}
+.formulaire-avis .form-group {
+  margin: 10px;
+}
+
+h2 {
+  font-family: var(--maintitle);
+  font-size: 30px;
+  color: var(--gold);
+}
+
+/*! ------ Submit button envoyer css ------ */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-3px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary);
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 0.375rem;
+  font-family: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button svg {
+  margin-right: 0.5rem;
+  animation: bounce 2s infinite;
+}
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background-color: var(--gold);
+  color: var(--primary);
+}
+.button:hover::before {
+  opacity: 0.1;
+}
